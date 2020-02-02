@@ -1,9 +1,18 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2019-12-14 10:25:34
+ * @LastEditors  : Zheng Gaoxiong
+ * @LastEditTime : 2020-02-03 00:49:02
+ */
 package models
 
 import (
 	"fmt"
-	"github.com/astaxie/beego/orm"
 	"strconv"
+
+	"github.com/astaxie/beego/orm"
 )
 
 const PROFILE_TABNAME = "tb_profile"
@@ -17,6 +26,7 @@ type User struct {
 	AvatarUrl string   //头像
 	Profile   *Profile `orm:"rel(one)"` //设置一对一的反向关系
 	//Manager   *Manager `orm:"rel(one)"`
+	Posts []*Post `json:"post" orm:"reverse(many)"`
 }
 
 //判断一个用户是否存在
@@ -57,4 +67,11 @@ func UpdateProfile(userID interface{}, userInfo map[string]interface{}) error {
 		return err
 	}
 	return nil
+}
+
+func GetUser(userId int64) (*User, error) {
+	user := User{Id: userId}
+	o := orm.NewOrm()
+	err := o.Read(&user)
+	return &user, err
 }

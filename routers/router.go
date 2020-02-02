@@ -14,5 +14,6 @@ func init() {
 	beego.Router("/api/v1/logout", &controllers.SessionController{}, "post:Logout")
 	beego.Router("/api/v1/session/get", &controllers.SessionController{}, "get:GetSessionData")
 	beego.Router("/api/v1/manager/register", &controllers.RegisterManagerController{}, "post:Register")
-	beego.Router("/api/v1/user/update", &controllers.UpdateUserController{}, "post:Update")
+	beego.Router("/api/v1/user/update", &controllers.UpdateUserController{}, "post:UpdateUser")
+	beego.Router("/api/v1/post/add", &controllers.AddPostController{}, "post:AddPost")
 }

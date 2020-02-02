@@ -1006,3 +1006,92 @@
 2020/02/02 22:11:16.257 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    10.9703ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
 2020/02/02 22:11:16.349 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     4.9918ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
 2020/02/02 22:11:16.440 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    69.3582ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/02 23:15:28.684 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     8.9762ms|   match|[44m GET     [0m /     r:*
+2020/02/02 23:15:29.641 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     5.4386ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/02 23:15:29.810 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    27.2905ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/02 23:15:29.901 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    21.9641ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/02 23:15:39.963 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /api/v1/login
+2020/02/02 23:15:40.047 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    78.7904ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/02 23:15:40.915 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    94.7466ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/03 00:18:08.412 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    32.9122ms|   match|[44m GET     [0m /     r:*
+2020/02/03 00:18:10.470 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|   427.1013ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:18:10.090 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|   111.7007ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:18:10.778 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.9371ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:18:16.932 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      609.4µs| nomatch|[47m OPTIONS [0m /api/v1/login
+2020/02/03 00:18:16.956 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    17.9528ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/03 00:18:21.358 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.9445ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:18:30.585 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      494.2µs| nomatch|[47m OPTIONS [0m /api/v1/user/register
+2020/02/03 00:18:30.623 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    32.8225ms|   match|[46m POST    [0m /api/v1/user/register   r:/api/v1/user/register
+2020/02/03 00:18:30.799 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    75.7943ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:18:32.720 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.0427ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:18:34.038 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.9772ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:18:35.173 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      782.9µs| nomatch|[47m OPTIONS [0m /api/v1/login
+2020/02/03 00:18:35.186 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     8.1853ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/03 00:18:35.283 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     6.5491ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:18:35.286 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     9.9769ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:22:02.339 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     6.9811ms|   match|[44m GET     [0m /     r:*
+2020/02/03 00:22:03.103 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.0073ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:22:03.280 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.6774ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:22:24.728 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     4.0592ms|   match|[44m GET     [0m /     r:*
+2020/02/03 00:22:25.409 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    18.9206ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:22:25.607 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.6373ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:22:37.021 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     4.9879ms|   match|[44m GET     [0m /     r:*
+2020/02/03 00:22:37.667 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    15.1735ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:22:37.842 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.5614ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:22:40.486 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     4.0112ms|   match|[44m GET     [0m /login   r:*
+2020/02/03 00:22:41.267 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.9566ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:22:44.080 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    12.9494ms|   match|[44m GET     [0m /login   r:*
+2020/02/03 00:22:44.580 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.9378ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:22:49.479 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      635.7µs| nomatch|[47m OPTIONS [0m /api/v1/login
+2020/02/03 00:22:49.496 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    11.9594ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/03 00:22:53.388 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.9919ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:23:06.545 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /api/v1/user/register
+2020/02/03 00:23:06.591 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    40.6115ms|   match|[46m POST    [0m /api/v1/user/register   r:/api/v1/user/register
+2020/02/03 00:23:06.737 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    38.9291ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:23:08.199 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /api/v1/login
+2020/02/03 00:23:08.223 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.8018ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/03 00:23:08.402 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    79.7462ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:23:08.405 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    58.4514ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:23:43.563 [D] [server.go:2802]  |      127.0.0.1|[43m 405 [0m|     3.9338ms|   match|[46m POST    [0m /api/v1/session/get   r:*
+2020/02/03 00:23:45.722 [D] [server.go:2802]  |      127.0.0.1|[43m 405 [0m|      3.146ms|   match|[46m POST    [0m /api/v1/session/get   r:*
+2020/02/03 00:23:49.831 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.1484ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:23:51.037 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.5389ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:23:51.525 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.0954ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:23:51.708 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     39.511ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:23:51.888 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     4.4409ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:25:34.055 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.8456ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/03 00:25:38.150 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.2699ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:28:14.380 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    52.4596ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:29:01.794 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    23.9997ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:44:41.707 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|   107.3513ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:44:48.444 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     1.9219ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:44:52.637 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     88.765ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:44:54.527 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    22.0265ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:58:10.426 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|       6.53ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:22.370 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     8.9788ms|   match|[44m GET     [0m /     r:*
+2020/02/03 00:58:23.153 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     5.1632ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:58:23.310 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     6.8774ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:29.372 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.0806ms|   match|[44m GET     [0m /register   r:*
+2020/02/03 00:58:29.817 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     4.9877ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:58:44.516 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      893.7µs| nomatch|[47m OPTIONS [0m /api/v1/user/register
+2020/02/03 00:58:44.556 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    35.8893ms|   match|[46m POST    [0m /api/v1/user/register   r:/api/v1/user/register
+2020/02/03 00:58:44.734 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    64.9089ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:58:46.242 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /api/v1/login
+2020/02/03 00:58:46.259 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.2275ms|   match|[46m POST    [0m /api/v1/login   r:/api/v1/login
+2020/02/03 00:58:46.431 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.7891ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:46.436 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.7036ms|   match|[44m GET     [0m /favicon.ico   r:*
+2020/02/03 00:58:50.592 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     1.9502ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:51.345 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|       3.09ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:51.865 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.4757ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:52.042 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    51.5552ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:52.283 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.5565ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:52.496 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.1315ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:52.698 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    16.8991ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:52.882 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    61.8542ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:53.044 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     9.2776ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:53.549 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.4676ms|   match|[44m GET     [0m /api/v1/session/get   r:/api/v1/session/get
+2020/02/03 00:58:58.891 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    36.6247ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:59:00.447 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    22.4155ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:59:01.234 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    21.6573ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:59:02.001 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    21.8224ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add
+2020/02/03 00:59:32.432 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    22.6719ms|   match|[46m POST    [0m /api/v1/post/add   r:/api/v1/post/add

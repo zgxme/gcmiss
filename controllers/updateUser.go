@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2019-12-15 21:42:55
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-02-03 00:53:04
+ */
 /**
  * @Author: zhenggaoxiong
  * @Description: update user info
@@ -20,7 +28,7 @@ type UpdateUserController struct {
 
 //TODO user nickname update
 
-func (r *UpdateUserController) Update() {
+func (r *UpdateUserController) UpdateUser() {
 	userInfo := make(map[string]interface{})
 	defer r.RespData(&r.Resp)
 	r.Errno = RECODE_OK

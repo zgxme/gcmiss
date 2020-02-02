@@ -22,7 +22,7 @@ func Init() {
 	_ = orm.RegisterDataBase("default", "mysql", dataSource, maxIdle, maxConn)
 	beego.Info("connect db success!")
 	orm.DefaultTimeLoc = time.UTC
-	orm.RegisterModelWithPrefix(tablePre, new(User), new(Profile), new(Manager))
+	orm.RegisterModelWithPrefix(tablePre, new(User), new(Profile), new(Manager),new(Post))
 	_ = orm.RunSyncdb("default", true, true)
 
 }
