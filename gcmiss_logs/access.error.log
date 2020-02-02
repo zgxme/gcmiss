@@ -1,0 +1,292 @@
+2019/12/15 16:55:33.633 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:55.635 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:55.736 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:55.876 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:55.993 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:56.126 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:56.275 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:56.409 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:56.544 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:56.641 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:56.758 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:56.867 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.001 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.122 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.278 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.396 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.532 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.670 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.802 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:57.933 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:58.078 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:55:58.212 [E] [login.go:28]  unexpected end of JSON input 
+2019/12/15 16:57:47.582 [E] [registerUser.go:44]  logID:[4e7e89af145a80c7336199bf218b5cec] traceID:[4e7e89af145a80c7336199bf218b5cec] error:[db exist] 
+2019/12/15 16:57:48.032 [E] [registerUser.go:44]  logID:[3028236e4f4ab9f5f4bfd795579d81b3] traceID:[3028236e4f4ab9f5f4bfd795579d81b3] error:[db exist] 
+2019/12/15 17:02:10.572 [E] [login.go:28]  logID:[905ca5b9f5eb0b0baf5fcfe9fe60955d] traceID:[905ca5b9f5eb0b0baf5fcfe9fe60955d] error:[unexpected end of JSON input] 
+2019/12/15 17:02:10.782 [E] [login.go:28]  logID:[c7984d0a9a799b11bfd58d4a8045975e] traceID:[c7984d0a9a799b11bfd58d4a8045975e] error:[unexpected end of JSON input] 
+2019/12/15 17:07:05.594 [E] [login.go:30]  logID:[1235dbfab93bb77ab6efe6e5cda2a045] traceID:[1235dbfab93bb77ab6efe6e5cda2a045] error:[unexpected end of JSON input] 
+2019/12/15 17:07:16.028 [E] [login.go:48]  logID:[c0d6e6ed5f6cc396a0e1116778a6ae9c] traceID:[c0d6e6ed5f6cc396a0e1116778a6ae9c] error:[db data error] 
+2019/12/15 17:07:22.699 [E] [login.go:30]  logID:[1aa39aaf47c7a3a5d07d3c2a79a50353] traceID:[1aa39aaf47c7a3a5d07d3c2a79a50353] error:[invalid character '}' looking for beginning of object key string] 
+2019/12/15 17:07:22.961 [E] [login.go:30]  logID:[833f182efd580694874049f8e8a425b6] traceID:[833f182efd580694874049f8e8a425b6] error:[invalid character '}' looking for beginning of object key string] 
+2019/12/15 17:07:23.635 [E] [login.go:30]  logID:[c8947cd8591c61f62d8729886da7b703] traceID:[c8947cd8591c61f62d8729886da7b703] error:[invalid character '}' looking for beginning of object key string] 
+2019/12/15 17:07:25.716 [E] [login.go:48]  logID:[ad4074431185228468edafb682a73320] traceID:[ad4074431185228468edafb682a73320] error:[db data error] 
+2019/12/15 20:00:07.298 [E] [registerManager.go:43]  logID:[16fab43aa1708a26f14ae426d1cd5feb] traceID:[16fab43aa1708a26f14ae426d1cd5feb] error:[db not exist] 
+2019/12/15 20:02:35.999 [E] [registerUser.go:45]  logID:[117774fc1f69ae048d6582e6136b8ed4] traceID:[117774fc1f69ae048d6582e6136b8ed4] error:[db exist] 
+2019/12/15 20:02:36.020 [E] [registerUser.go:64]  logID:[117774fc1f69ae048d6582e6136b8ed4] traceID:[117774fc1f69ae048d6582e6136b8ed4] error:[Error 1062: Duplicate entry 'zhenggaoxiong' for key 'nickname'] 
+2019/12/15 20:03:30.766 [E] [registerUser.go:25]  logID:[e872dbc36ddf19c067abafd54a4fc062] traceID:[e872dbc36ddf19c067abafd54a4fc062] error:[unexpected end of JSON input] 
+2019/12/15 20:04:05.087 [E] [registerUser.go:45]  logID:[89a3f78b3886092d31e3603de06831f3] traceID:[89a3f78b3886092d31e3603de06831f3] error:[db exist] 
+2019/12/15 20:04:05.108 [E] [registerUser.go:64]  logID:[89a3f78b3886092d31e3603de06831f3] traceID:[89a3f78b3886092d31e3603de06831f3] error:[Error 1062: Duplicate entry 'zhenggaoxiong' for key 'nickname'] 
+2019/12/15 20:12:28.814 [E] [registerManager.go:33]  logID:[579483ef52171c6f7254e0b03b7934e2] traceID:[579483ef52171c6f7254e0b03b7934e2] error:[unexpected end of JSON input] 
+2019/12/15 20:13:40.546 [E] [registerManager.go:33]  logID:[48cc648a50fc3ddcbf2f1c7d47286188] traceID:[48cc648a50fc3ddcbf2f1c7d47286188] error:[invalid character '}' looking for beginning of object key string] 
+2019/12/15 20:13:47.726 [E] [registerManager.go:43]  logID:[becd81826d740e4a23a8d4df62fe76a1] traceID:[becd81826d740e4a23a8d4df62fe76a1] error:[db not exist] 
+2019/12/15 20:16:22.923 [E] [registerManager.go:43]  logID:[efadf7fa3204bc0aaca1f6f926907940] traceID:[efadf7fa3204bc0aaca1f6f926907940] error:[db not exist] 
+2019/12/15 20:16:30.427 [E] [registerManager.go:43]  logID:[92d996ebad61ec603b754c58afbb6502] traceID:[92d996ebad61ec603b754c58afbb6502] error:[db not exist] 
+2019/12/15 20:17:51.474 [E] [registerManager.go:43]  logID:[69aafb79fbaf2e65c2413c449b044ad0] traceID:[69aafb79fbaf2e65c2413c449b044ad0] error:[db not exist] 
+2019/12/15 20:25:55.544 [E] [registerManager.go:46]  logID:[549cd3b5f4b404c3b2e85c66581c3474] traceID:[549cd3b5f4b404c3b2e85c66581c3474] error:[db not exist] 
+2019/12/15 20:28:12.392 [E] [registerManager.go:57]  logID:[4a435f4e3c888b8eff2d31a6ac0d34af] traceID:[4a435f4e3c888b8eff2d31a6ac0d34af] error:[db exist] 
+2019/12/15 20:37:37.454 [E] [registerManager.go:36]  logID:[404a0864e937358fe6962b23f2b98cd1] traceID:[404a0864e937358fe6962b23f2b98cd1] error:[cannot add self] 
+2019/12/15 20:37:39.838 [E] [registerManager.go:36]  logID:[e9c775ffe3682df9e715374308534f9b] traceID:[e9c775ffe3682df9e715374308534f9b] error:[cannot add self] 
+2019/12/15 20:37:40.928 [E] [registerManager.go:36]  logID:[16b45bb86af4b776741c346e83a20477] traceID:[16b45bb86af4b776741c346e83a20477] error:[cannot add self] 
+2019/12/15 20:37:41.441 [E] [registerManager.go:36]  logID:[970542a6328245cd4c910f409bac3e84] traceID:[970542a6328245cd4c910f409bac3e84] error:[cannot add self] 
+2019/12/15 20:37:44.038 [E] [registerManager.go:36]  logID:[3b6399b23ddd285c14c911249a5b5a56] traceID:[3b6399b23ddd285c14c911249a5b5a56] error:[cannot add self] 
+2019/12/15 20:37:44.680 [E] [registerManager.go:36]  logID:[4d7800fe8241b459dc2323bd89eef69e] traceID:[4d7800fe8241b459dc2323bd89eef69e] error:[cannot add self] 
+2019/12/15 20:37:45.358 [E] [registerManager.go:36]  logID:[70696adbe52df3c4c52260ba8ab9c960] traceID:[70696adbe52df3c4c52260ba8ab9c960] error:[cannot add self] 
+2019/12/15 20:37:45.961 [E] [registerManager.go:36]  logID:[8ff83adb2a090272e14583af9156f531] traceID:[8ff83adb2a090272e14583af9156f531] error:[cannot add self] 
+2019/12/15 20:37:46.581 [E] [registerManager.go:36]  logID:[32285744e81d607aa57141ea7939509a] traceID:[32285744e81d607aa57141ea7939509a] error:[cannot add self] 
+2019/12/15 20:37:49.618 [E] [registerManager.go:36]  logID:[e4a3d76555211f72660979a99885d6ae] traceID:[e4a3d76555211f72660979a99885d6ae] error:[cannot add self] 
+2019/12/15 20:37:50.794 [E] [registerManager.go:36]  logID:[3d998ece9593d110b924c0f399f59c85] traceID:[3d998ece9593d110b924c0f399f59c85] error:[cannot add self] 
+2019/12/16 15:13:53.314 [E] [updateUser.go:34]  logID:[98a53b120a65c77a8951e283f818dc5b] traceID:[98a53b120a65c77a8951e283f818dc5b] error:[param error] 
+2019/12/16 15:15:28.047 [E] [updateUser.go:34]  logID:[3d6f14a50d9e044b30009340fd7d87d9] traceID:[3d6f14a50d9e044b30009340fd7d87d9] error:[unexpected end of JSON input] 
+2019/12/16 16:20:44.379 [E] [updateUser.go:48]  qwdqwdq 
+2019/12/16 16:22:17.777 [E] [updateUser.go:48]  qwdqwdq 
+2019/12/16 16:25:03.400 [E] [updateUser.go:63]  ----------- 
+2019/12/16 16:26:18.128 [E] [updateUser.go:63]  ----------- 
+2019/12/16 16:28:27.944 [E] [updateUser.go:63]  ----------- 
+2019/12/16 16:30:19.706 [E] [updateUser.go:63]  ----------- 
+2019/12/16 16:36:01.750 [E] [registerManager.go:54]  logID:[30490b2357c1c46477a0d149f00d519b] traceID:[30490b2357c1c46477a0d149f00d519b] error:[db not exist] 
+2019/12/16 16:37:06.704 [E] [updateUser.go:63]  ----------- 
+2019/12/16 16:45:10.459 [E] [updateUser.go:63]  ----------- 
+2019/12/16 16:51:18.611 [E] [user.go:52]  ---------------------- 
+2019/12/16 16:52:00.917 [E] [updateUser.go:45]  logID:[bc4b7409b7a831d1620e6c837f7ff2bc] traceID:[bc4b7409b7a831d1620e6c837f7ff2bc] error:[param error] 
+2019/12/16 16:52:15.093 [E] [user.go:52]  ---------------------- 
+2019/12/16 16:53:06.943 [E] [user.go:52]  ---------------------- 
+2019/12/16 16:55:32.189 [E] [login.go:48]  logID:[1aaf78c35546b613c3e365acaa0fe703] traceID:[1aaf78c35546b613c3e365acaa0fe703] error:[db data error] 
+2019/12/16 16:55:49.992 [E] [user.go:52]  ---------------------- 
+2019/12/16 16:55:49.992 [E] [user.go:55]  ---------------------- 
+2019/12/16 17:07:50.288 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:07:50.288 [E] [user.go:55]  ---------------------- 
+2019/12/16 17:09:21.406 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:09:21.406 [E] [user.go:55]  ---------------------- 
+2019/12/16 17:22:32.893 [E] [login.go:48]  logID:[b950447d46b1fb96b254d658508f78bc] traceID:[b950447d46b1fb96b254d658508f78bc] error:[db data error] 
+2019/12/16 17:22:45.359 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:22:45.359 [E] [user.go:55]  ---------------------- 
+2019/12/16 17:26:09.476 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:26:09.477 [E] [user.go:56]  ---------------------- 
+2019/12/16 17:26:09.478 [E] [updateUser.go:67]  logID:[2e706c00e7fb144861f5096e09a28d0b] traceID:[2e706c00e7fb144861f5096e09a28d0b] error:[Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? SET name = ?,stu_id = ?,school = ?,profession=?, sex = ?, q_q_number = ?,email' at line 1] 
+2019/12/16 17:27:44.800 [E] [login.go:48]  logID:[e6a351cc615fd8f70fd24990c375e74a] traceID:[e6a351cc615fd8f70fd24990c375e74a] error:[db data error] 
+2019/12/16 17:28:01.692 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:28:01.693 [E] [user.go:56]  ---------------------- 
+2019/12/16 17:28:01.693 [E] [updateUser.go:67]  logID:[938fff2bf8342e198018e27ba231737a] traceID:[938fff2bf8342e198018e27ba231737a] error:[Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? SET name = ?,stu_id = ?,school = ?,profession=?, sex = ?, q_q_number = ?,email' at line 1] 
+2019/12/16 17:33:50.810 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:33:50.811 [E] [user.go:56]  ---------------------- 
+2019/12/16 17:33:50.811 [E] [updateUser.go:67]  logID:[19a0299143a60bec82877bd596f7de94] traceID:[19a0299143a60bec82877bd596f7de94] error:[Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? SET name = ?,stu_id = ?,school = ?,profession=?, sex = ?, q_q_number = ?,email' at line 1] 
+2019/12/16 17:36:03.565 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:36:03.566 [E] [user.go:56]  ---------------------- 
+2019/12/16 17:36:03.567 [E] [updateUser.go:67]  logID:[9e73a0b710dfd8c396127d69a414822f] traceID:[9e73a0b710dfd8c396127d69a414822f] error:[sql: expected 9 arguments, got 10] 
+2019/12/16 17:36:39.428 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:36:39.431 [E] [user.go:56]  ---------------------- 
+2019/12/16 17:36:56.888 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:36:56.889 [E] [user.go:56]  ---------------------- 
+2019/12/16 17:42:23.877 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:42:23.878 [E] [user.go:56]  ---------------------- 
+2019/12/16 17:43:33.678 [E] [user.go:52]  ---------------------- 
+2019/12/16 17:43:33.679 [E] [user.go:56]  ---------------------- 
+2019/12/20 16:23:27.515 [E] [registerUser.go:45]  logID:[4551caeebeda21e01d160a6e90c46d78] traceID:[4551caeebeda21e01d160a6e90c46d78] error:[db exist] 
+2019/12/20 16:23:27.552 [E] [registerUser.go:64]  logID:[4551caeebeda21e01d160a6e90c46d78] traceID:[4551caeebeda21e01d160a6e90c46d78] error:[Error 1062: Duplicate entry 'hanyang' for key 'nickname'] 
+2019/12/20 16:25:30.778 [E] [login.go:48]  logID:[8c480832ef9f5646df7c8bbe4cc1ffda] traceID:[8c480832ef9f5646df7c8bbe4cc1ffda] error:[db data error] 
+2019/12/20 16:26:53.474 [E] [registerUser.go:45]  logID:[ffafd01e219fd0b5d5d7bc89c510d81a] traceID:[ffafd01e219fd0b5d5d7bc89c510d81a] error:[db exist] 
+2019/12/20 16:26:53.507 [E] [registerUser.go:64]  logID:[ffafd01e219fd0b5d5d7bc89c510d81a] traceID:[ffafd01e219fd0b5d5d7bc89c510d81a] error:[Error 1062: Duplicate entry 'hanyang' for key 'nickname'] 
+2019/12/20 16:37:05.906 [E] [registerUser.go:45]  logID:[bd87170470a43d59fa96f3bddca3c3cf] traceID:[bd87170470a43d59fa96f3bddca3c3cf] error:[db exist] 
+2019/12/20 16:37:05.939 [E] [registerUser.go:64]  logID:[bd87170470a43d59fa96f3bddca3c3cf] traceID:[bd87170470a43d59fa96f3bddca3c3cf] error:[Error 1062: Duplicate entry 'qwd' for key 'nickname'] 
+2019/12/20 16:41:13.385 [E] [registerUser.go:46]  logID:[27177c47a6b94463d0e6396c5b94a0be] traceID:[27177c47a6b94463d0e6396c5b94a0be] error:[db exist] 
+2019/12/20 16:41:13.408 [E] [registerUser.go:66]  logID:[27177c47a6b94463d0e6396c5b94a0be] traceID:[27177c47a6b94463d0e6396c5b94a0be] error:[Error 1062: Duplicate entry '23122' for key 'nickname'] 
+2019/12/20 16:48:14.267 [E] [registerUser.go:46]  logID:[309f8a5c12c842c28b5a3481fab01132] traceID:[309f8a5c12c842c28b5a3481fab01132] error:[db exist] 
+2019/12/20 16:48:14.291 [E] [registerUser.go:66]  logID:[309f8a5c12c842c28b5a3481fab01132] traceID:[309f8a5c12c842c28b5a3481fab01132] error:[Error 1062: Duplicate entry '23122' for key 'nickname'] 
+2019/12/20 16:51:56.100 [E] [registerUser.go:46]  logID:[173bba02457640a68f883a517f0fefb5] traceID:[173bba02457640a68f883a517f0fefb5] error:[db exist] 
+2019/12/20 16:51:56.138 [E] [registerUser.go:66]  logID:[173bba02457640a68f883a517f0fefb5] traceID:[173bba02457640a68f883a517f0fefb5] error:[Error 1062: Duplicate entry '23122' for key 'nickname'] 
+2019/12/20 16:52:27.960 [E] [registerUser.go:46]  logID:[cb48f6b64f1ff6ef371440e6753ea696] traceID:[cb48f6b64f1ff6ef371440e6753ea696] error:[db exist] 
+2019/12/20 16:52:27.996 [E] [registerUser.go:66]  logID:[cb48f6b64f1ff6ef371440e6753ea696] traceID:[cb48f6b64f1ff6ef371440e6753ea696] error:[Error 1062: Duplicate entry '23122' for key 'nickname'] 
+2019/12/20 16:52:30.813 [E] [registerUser.go:46]  logID:[7a66dbac8a1e31602e649c046f1c9a7a] traceID:[7a66dbac8a1e31602e649c046f1c9a7a] error:[db exist] 
+2019/12/20 16:52:30.837 [E] [registerUser.go:66]  logID:[7a66dbac8a1e31602e649c046f1c9a7a] traceID:[7a66dbac8a1e31602e649c046f1c9a7a] error:[Error 1062: Duplicate entry '23122' for key 'nickname'] 
+2019/12/20 16:52:31.841 [E] [registerUser.go:46]  logID:[c2701b4160155096b1535bbe7ac74445] traceID:[c2701b4160155096b1535bbe7ac74445] error:[db exist] 
+2019/12/20 16:52:31.863 [E] [registerUser.go:66]  logID:[c2701b4160155096b1535bbe7ac74445] traceID:[c2701b4160155096b1535bbe7ac74445] error:[Error 1062: Duplicate entry '23122' for key 'nickname'] 
+2019/12/22 20:40:38.585 [E] [registerUser.go:25]  logID:[e222451754b6965dbe284dac3b1b90e4] traceID:[e222451754b6965dbe284dac3b1b90e4] error:[unexpected end of JSON input] 
+2019/12/22 20:42:13.760 [E] [registerUser.go:45]  logID:[9a8bd5b4085a5d2ef2ad817e391cc5f9] traceID:[9a8bd5b4085a5d2ef2ad817e391cc5f9] error:[db exist] 
+2019/12/22 20:42:13.785 [E] [registerUser.go:64]  logID:[9a8bd5b4085a5d2ef2ad817e391cc5f9] traceID:[9a8bd5b4085a5d2ef2ad817e391cc5f9] error:[Error 1062: Duplicate entry 'gdc' for key 'nickname'] 
+2019/12/22 23:33:43.863 [E] [registerUser.go:43]  logID:[5a046d172599eb47d44c8c5d0cfade03] traceID:[5a046d172599eb47d44c8c5d0cfade03] error:[db exist] 
+2019/12/22 23:33:43.899 [E] [registerUser.go:62]  logID:[5a046d172599eb47d44c8c5d0cfade03] traceID:[5a046d172599eb47d44c8c5d0cfade03] error:[Error 1062: Duplicate entry 'zgxzgx' for key 'nickname'] 
+2019/12/22 23:33:55.122 [E] [registerUser.go:43]  logID:[d2a063209f154ffa450103cecffdbf22] traceID:[d2a063209f154ffa450103cecffdbf22] error:[db exist] 
+2019/12/22 23:33:55.161 [E] [registerUser.go:62]  logID:[d2a063209f154ffa450103cecffdbf22] traceID:[d2a063209f154ffa450103cecffdbf22] error:[Error 1062: Duplicate entry 'zgxzgx' for key 'nickname'] 
+2019/12/22 23:34:26.423 [E] [registerUser.go:43]  logID:[c62aa0c0656acadc8781eb813f71aea8] traceID:[c62aa0c0656acadc8781eb813f71aea8] error:[db exist] 
+2019/12/22 23:34:26.448 [E] [registerUser.go:62]  logID:[c62aa0c0656acadc8781eb813f71aea8] traceID:[c62aa0c0656acadc8781eb813f71aea8] error:[Error 1062: Duplicate entry 'zgxzgx' for key 'nickname'] 
+2019/12/22 23:34:40.721 [E] [login.go:44]  logID:[165f2d7cac4ad4ebea98967f4dd6403b] traceID:[165f2d7cac4ad4ebea98967f4dd6403b] error:[db data error] 
+2019/12/22 23:35:03.238 [E] [login.go:44]  logID:[fca25862e8c33e563f233fb3c1fbe5f5] traceID:[fca25862e8c33e563f233fb3c1fbe5f5] error:[db data error] 
+2019/12/22 23:35:34.658 [E] [login.go:44]  logID:[1d8d486a44c29c79ed6af33c430180f9] traceID:[1d8d486a44c29c79ed6af33c430180f9] error:[db data error] 
+2019/12/22 23:36:38.230 [E] [login.go:44]  logID:[c8ac3d5e61c04f88c68ecac32fb8f58f] traceID:[c8ac3d5e61c04f88c68ecac32fb8f58f] error:[db data error] 
+2019/12/22 23:36:58.351 [E] [registerUser.go:43]  logID:[ffb347abe527d8752942bd147f6b3f09] traceID:[ffb347abe527d8752942bd147f6b3f09] error:[db exist] 
+2019/12/22 23:37:37.155 [E] [registerManager.go:56]  logID:[1e8aa8fa9110e46a0404b54954c22912] traceID:[1e8aa8fa9110e46a0404b54954c22912] error:[db not exist] 
+2019/12/22 23:39:21.604 [E] [login.go:51]  logID:[c425b794c33e4fc178bb63d4ccc93594] traceID:[c425b794c33e4fc178bb63d4ccc93594] error:[db data error] 
+2019/12/28 15:33:20.137 [E] [registerUser.go:34]  logID:[ebf6f4c6a3d5a6b964c543e1305a8c29] traceID:[ebf6f4c6a3d5a6b964c543e1305a8c29] error:[param error] 
+2019/12/28 15:33:54.388 [E] [registerUser.go:34]  logID:[fb4194b5e6f9c20cfc3d7fbf3d88eb9f] traceID:[fb4194b5e6f9c20cfc3d7fbf3d88eb9f] error:[param error] 
+2019/12/28 15:33:55.080 [E] [registerUser.go:34]  logID:[d3a2fbba08b3f6592ac6d794e7315ac1] traceID:[d3a2fbba08b3f6592ac6d794e7315ac1] error:[param error] 
+2019/12/28 15:33:55.258 [E] [registerUser.go:34]  logID:[8ce6bd955d4e358bb02a6e823025449f] traceID:[8ce6bd955d4e358bb02a6e823025449f] error:[param error] 
+2019/12/28 15:33:55.373 [E] [registerUser.go:34]  logID:[19715fcd902e657defe9d532c6dbfeab] traceID:[19715fcd902e657defe9d532c6dbfeab] error:[param error] 
+2019/12/28 15:33:55.568 [E] [registerUser.go:34]  logID:[49b96fdeb1c68f36013e78c577c1e0d3] traceID:[49b96fdeb1c68f36013e78c577c1e0d3] error:[param error] 
+2019/12/28 15:33:55.879 [E] [registerUser.go:34]  logID:[0de721f507d5f714128617595375a962] traceID:[0de721f507d5f714128617595375a962] error:[param error] 
+2019/12/28 15:33:56.083 [E] [registerUser.go:34]  logID:[837d2f0de9ab48281eabaf1a3b8b0777] traceID:[837d2f0de9ab48281eabaf1a3b8b0777] error:[param error] 
+2019/12/28 15:33:56.303 [E] [registerUser.go:34]  logID:[03e4e57b5115fc473a64acdb29b36190] traceID:[03e4e57b5115fc473a64acdb29b36190] error:[param error] 
+2019/12/28 15:33:56.487 [E] [registerUser.go:34]  logID:[8934c79106bc9a08ec0afb3c9fd0cd3b] traceID:[8934c79106bc9a08ec0afb3c9fd0cd3b] error:[param error] 
+2019/12/28 15:33:56.601 [E] [registerUser.go:34]  logID:[d6844b4543d439afb688ff7aea6136a9] traceID:[d6844b4543d439afb688ff7aea6136a9] error:[param error] 
+2019/12/28 15:33:56.830 [E] [registerUser.go:34]  logID:[b4b5fd97d2dd21abd19febb64199f484] traceID:[b4b5fd97d2dd21abd19febb64199f484] error:[param error] 
+2019/12/28 15:33:56.962 [E] [registerUser.go:34]  logID:[4559463dfd78975e9e4ab0a3c569ee5d] traceID:[4559463dfd78975e9e4ab0a3c569ee5d] error:[param error] 
+2019/12/28 15:33:57.086 [E] [registerUser.go:34]  logID:[b8b82464c1067eefe7c4506835e6134f] traceID:[b8b82464c1067eefe7c4506835e6134f] error:[param error] 
+2019/12/28 15:33:57.202 [E] [registerUser.go:34]  logID:[7f837e3925c12984e7aec940903ac9dc] traceID:[7f837e3925c12984e7aec940903ac9dc] error:[param error] 
+2019/12/28 15:33:57.402 [E] [registerUser.go:34]  logID:[2ce32f96ae74c9fa886fe03b3d70b9db] traceID:[2ce32f96ae74c9fa886fe03b3d70b9db] error:[param error] 
+2019/12/28 15:33:57.503 [E] [registerUser.go:34]  logID:[7aca5d16b80abfa73660f34f38245aa9] traceID:[7aca5d16b80abfa73660f34f38245aa9] error:[param error] 
+2019/12/28 15:33:57.684 [E] [registerUser.go:34]  logID:[91512fec0f8f27c532c1ab02348c9206] traceID:[91512fec0f8f27c532c1ab02348c9206] error:[param error] 
+2019/12/28 15:33:57.895 [E] [registerUser.go:34]  logID:[cafcdca0a9aaaca1ba553a0f2fcf1dbe] traceID:[cafcdca0a9aaaca1ba553a0f2fcf1dbe] error:[param error] 
+2019/12/28 15:33:58.100 [E] [registerUser.go:34]  logID:[d92f3b27f4b39129a8bb4c009c1889c1] traceID:[d92f3b27f4b39129a8bb4c009c1889c1] error:[param error] 
+2019/12/28 15:34:15.960 [E] [registerUser.go:34]  logID:[c0139dc785908747caf3d6e023f3c47a] traceID:[c0139dc785908747caf3d6e023f3c47a] error:[param error] 
+2019/12/28 15:44:50.966 [E] [registerUser.go:34]  logID:[df6df0226de04b66a2393ce6e785b774] traceID:[df6df0226de04b66a2393ce6e785b774] error:[param error] 
+2019/12/28 15:45:51.983 [E] [registerUser.go:34]  logID:[76100efe611fd8aa5f6b32c3f922ec1b] traceID:[76100efe611fd8aa5f6b32c3f922ec1b] error:[param error] 
+2019/12/28 15:46:03.709 [E] [registerUser.go:34]  logID:[c3e8f1fffd99560ba99fadf71a3ff519] traceID:[c3e8f1fffd99560ba99fadf71a3ff519] error:[param error] 
+2019/12/28 15:51:38.442 [E] [registerUser.go:34]  logID:[afda1b794a0e5c5ccf32056851e2919a] traceID:[afda1b794a0e5c5ccf32056851e2919a] error:[param error] 
+2019/12/28 15:51:57.287 [E] [registerUser.go:44]  logID:[a2801230199154e7e7a5638e4184aba0] traceID:[a2801230199154e7e7a5638e4184aba0] error:[db exist] 
+2019/12/28 15:52:26.347 [E] [registerUser.go:34]  logID:[aa986a08423d3de3ea5b4677e155122a] traceID:[aa986a08423d3de3ea5b4677e155122a] error:[param error] 
+2019/12/28 15:53:33.784 [E] [registerUser.go:44]  logID:[f898756d167fc9221b5d9f5c3a9297b6] traceID:[f898756d167fc9221b5d9f5c3a9297b6] error:[db exist] 
+2019/12/28 15:55:57.629 [E] [registerUser.go:34]  logID:[2d239c368935c08086e05f60bed55b0e] traceID:[2d239c368935c08086e05f60bed55b0e] error:[param error] 
+2019/12/28 15:56:39.190 [E] [registerUser.go:34]  logID:[2b786f60f5da280c26d0855c1d23b7b6] traceID:[2b786f60f5da280c26d0855c1d23b7b6] error:[param error] 
+2019/12/28 15:56:58.382 [E] [registerUser.go:34]  logID:[5fe0f23ca6599e4d9dff3f55e2500515] traceID:[5fe0f23ca6599e4d9dff3f55e2500515] error:[param error] 
+2019/12/28 15:59:23.174 [E] [registerUser.go:44]  logID:[82165cb7b5b544302bbf38702921d3e5] traceID:[82165cb7b5b544302bbf38702921d3e5] error:[db exist] 
+2019/12/28 15:59:23.531 [E] [registerUser.go:44]  logID:[765fa03969575c564948e3b3695da796] traceID:[765fa03969575c564948e3b3695da796] error:[db exist] 
+2019/12/28 15:59:23.728 [E] [registerUser.go:44]  logID:[fe28880a9009b46f618547292f805042] traceID:[fe28880a9009b46f618547292f805042] error:[db exist] 
+2019/12/28 15:59:23.851 [E] [registerUser.go:44]  logID:[4b8fc97eeaed245e0470f105cb9c1ec8] traceID:[4b8fc97eeaed245e0470f105cb9c1ec8] error:[db exist] 
+2019/12/28 15:59:23.948 [E] [registerUser.go:44]  logID:[4bdc1a4c7dead190e605229af0510b19] traceID:[4bdc1a4c7dead190e605229af0510b19] error:[db exist] 
+2019/12/28 15:59:24.148 [E] [registerUser.go:44]  logID:[5d07dbf5aff3a6f37b1c62c87c54a9be] traceID:[5d07dbf5aff3a6f37b1c62c87c54a9be] error:[db exist] 
+2019/12/28 15:59:24.333 [E] [registerUser.go:44]  logID:[ffe454933a64b01721786d70deba7fa7] traceID:[ffe454933a64b01721786d70deba7fa7] error:[db exist] 
+2019/12/28 15:59:24.431 [E] [registerUser.go:44]  logID:[e8039d37e6d2d6985f6d4e4d0f7e2565] traceID:[e8039d37e6d2d6985f6d4e4d0f7e2565] error:[db exist] 
+2019/12/28 15:59:24.555 [E] [registerUser.go:44]  logID:[f4cb87a93fab65f5d2e68691e9ed7557] traceID:[f4cb87a93fab65f5d2e68691e9ed7557] error:[db exist] 
+2019/12/28 15:59:24.896 [E] [registerUser.go:44]  logID:[638f7eac44e512c49a978391b85f1d79] traceID:[638f7eac44e512c49a978391b85f1d79] error:[db exist] 
+2019/12/28 15:59:25.027 [E] [registerUser.go:44]  logID:[2b4076534c4e01fec225f26af19eb255] traceID:[2b4076534c4e01fec225f26af19eb255] error:[db exist] 
+2019/12/28 15:59:25.029 [E] [registerUser.go:44]  logID:[0513521b2a4858c59f269d251094c336] traceID:[0513521b2a4858c59f269d251094c336] error:[db exist] 
+2019/12/28 15:59:25.148 [E] [registerUser.go:44]  logID:[86cf7823e47618f93f315ba8cee18067] traceID:[86cf7823e47618f93f315ba8cee18067] error:[db exist] 
+2019/12/28 15:59:25.252 [E] [registerUser.go:44]  logID:[356b1b5c89ef49f2ba30d173c9e07d11] traceID:[356b1b5c89ef49f2ba30d173c9e07d11] error:[db exist] 
+2019/12/28 15:59:25.475 [E] [registerUser.go:44]  logID:[60f5e5ae1d8537700978622795da1ef0] traceID:[60f5e5ae1d8537700978622795da1ef0] error:[db exist] 
+2019/12/28 15:59:25.576 [E] [registerUser.go:44]  logID:[0d2f45401ff07f02e459af86181e1ee1] traceID:[0d2f45401ff07f02e459af86181e1ee1] error:[db exist] 
+2019/12/28 15:59:25.688 [E] [registerUser.go:44]  logID:[55eb7307649075d784652c46fe829852] traceID:[55eb7307649075d784652c46fe829852] error:[db exist] 
+2019/12/28 15:59:25.879 [E] [registerUser.go:44]  logID:[1d43f0f6e734d5531197dfeb6a391be3] traceID:[1d43f0f6e734d5531197dfeb6a391be3] error:[db exist] 
+2019/12/28 15:59:26.027 [E] [registerUser.go:44]  logID:[f8622a3d612b6606fe42041cf2b42963] traceID:[f8622a3d612b6606fe42041cf2b42963] error:[db exist] 
+2019/12/28 16:00:49.256 [E] [registerUser.go:44]  logID:[498251eadecaed9205498e85c96ad8c6] traceID:[498251eadecaed9205498e85c96ad8c6] error:[db exist] 
+2019/12/28 16:11:18.142 [E] [registerUser.go:34]  logID:[50642a5241610ce4e8b2086ac60563c6] traceID:[50642a5241610ce4e8b2086ac60563c6] error:[param error] 
+2019/12/28 16:11:18.479 [E] [registerUser.go:34]  logID:[62b53a4edcdc02c78e6dbb17e5b26004] traceID:[62b53a4edcdc02c78e6dbb17e5b26004] error:[param error] 
+2019/12/28 16:11:18.654 [E] [registerUser.go:34]  logID:[436fd267cad320eca1695dce07a2b802] traceID:[436fd267cad320eca1695dce07a2b802] error:[param error] 
+2019/12/28 16:11:18.894 [E] [registerUser.go:34]  logID:[89de93ec5346416f61d4edae09645a4b] traceID:[89de93ec5346416f61d4edae09645a4b] error:[param error] 
+2019/12/28 16:11:19.004 [E] [registerUser.go:34]  logID:[f6ea25784264dcf5b711a1da77f9e4f0] traceID:[f6ea25784264dcf5b711a1da77f9e4f0] error:[param error] 
+2019/12/28 16:11:19.145 [E] [registerUser.go:34]  logID:[f10e20c191fc2ac1c38b70194facb4e0] traceID:[f10e20c191fc2ac1c38b70194facb4e0] error:[param error] 
+2019/12/28 16:11:19.243 [E] [registerUser.go:34]  logID:[296eee779b8c3c331e346678cc8873fd] traceID:[296eee779b8c3c331e346678cc8873fd] error:[param error] 
+2019/12/28 16:11:19.456 [E] [registerUser.go:34]  logID:[2c39c91dd76ad24b7cfd57e5355acfe6] traceID:[2c39c91dd76ad24b7cfd57e5355acfe6] error:[param error] 
+2019/12/28 16:11:20.311 [E] [registerUser.go:34]  logID:[f4be93b01cfbfeda861df4510e4aee00] traceID:[f4be93b01cfbfeda861df4510e4aee00] error:[param error] 
+2019/12/28 16:11:20.517 [E] [registerUser.go:34]  logID:[df8b0617523240d7f4c74a7627f6e5ce] traceID:[df8b0617523240d7f4c74a7627f6e5ce] error:[param error] 
+2019/12/28 16:11:20.677 [E] [registerUser.go:34]  logID:[ace71edea0c1fd059ef13ef66ec3f2ed] traceID:[ace71edea0c1fd059ef13ef66ec3f2ed] error:[param error] 
+2019/12/28 16:11:22.274 [E] [registerUser.go:34]  logID:[3c67d50b8011530bd0875d6bf3643366] traceID:[3c67d50b8011530bd0875d6bf3643366] error:[param error] 
+2019/12/28 16:11:22.455 [E] [registerUser.go:34]  logID:[1ffee18d8cd202a28fd97fc5a84b09a0] traceID:[1ffee18d8cd202a28fd97fc5a84b09a0] error:[param error] 
+2019/12/28 16:11:22.659 [E] [registerUser.go:34]  logID:[6e4713ea7bd9ad8df2e5a82a4af1ad95] traceID:[6e4713ea7bd9ad8df2e5a82a4af1ad95] error:[param error] 
+2019/12/28 16:11:30.149 [E] [registerUser.go:34]  logID:[d994012c9eb92dc0d3d91f11151f059e] traceID:[d994012c9eb92dc0d3d91f11151f059e] error:[param error] 
+2019/12/28 16:11:30.336 [E] [registerUser.go:34]  logID:[35c0d41192e3e8ba955a4f42b029df11] traceID:[35c0d41192e3e8ba955a4f42b029df11] error:[param error] 
+2019/12/28 16:18:16.035 [E] [registerUser.go:34]  logID:[825db2f7da64375bf52cd85de10a0087] traceID:[825db2f7da64375bf52cd85de10a0087] error:[param error] 
+2019/12/28 16:19:19.142 [E] [registerUser.go:34]  logID:[1921dfccba68f204deed46843e21f2ec] traceID:[1921dfccba68f204deed46843e21f2ec] error:[param error] 
+2019/12/28 16:35:20.678 [E] [registerUser.go:34]  logID:[1113a0b077a041936f70a4d9b28aa6dc] traceID:[1113a0b077a041936f70a4d9b28aa6dc] error:[param error] 
+2019/12/28 16:35:20.688 [E] [registerUser.go:34]  logID:[7cc386152a4f305f309aaa016b6a99f9] traceID:[7cc386152a4f305f309aaa016b6a99f9] error:[param error] 
+2019/12/28 16:42:22.775 [E] [registerUser.go:34]  logID:[f5e80e58f9bc7952782cb4a28d147250] traceID:[f5e80e58f9bc7952782cb4a28d147250] error:[param error] 
+2019/12/28 16:50:44.447 [E] [registerUser.go:34]  logID:[3dcedb793165294609ad030baf8fdfd5] traceID:[3dcedb793165294609ad030baf8fdfd5] error:[param error] 
+2019/12/28 16:50:49.800 [E] [registerUser.go:34]  logID:[0c6d96727fd5472e247d2a665b78683a] traceID:[0c6d96727fd5472e247d2a665b78683a] error:[param error] 
+2019/12/28 16:53:30.455 [E] [registerUser.go:34]  logID:[c109a2a8af7c508073b67d8806ab404a] traceID:[c109a2a8af7c508073b67d8806ab404a] error:[param error] 
+2019/12/28 16:53:30.736 [E] [registerUser.go:34]  logID:[7dc35877897e3adbd4c10c5dc3bf3f1a] traceID:[7dc35877897e3adbd4c10c5dc3bf3f1a] error:[param error] 
+2019/12/28 16:53:31.111 [E] [registerUser.go:34]  logID:[64fe1284ec42d5e69405b24db524ede4] traceID:[64fe1284ec42d5e69405b24db524ede4] error:[param error] 
+2019/12/28 16:53:31.398 [E] [registerUser.go:34]  logID:[9005974d9bcabfe03d2419bcbe09551a] traceID:[9005974d9bcabfe03d2419bcbe09551a] error:[param error] 
+2019/12/28 16:53:32.020 [E] [registerUser.go:34]  logID:[5b26db406d57879e642f0e82a856a206] traceID:[5b26db406d57879e642f0e82a856a206] error:[param error] 
+2019/12/28 16:53:32.284 [E] [registerUser.go:34]  logID:[a6b644db82e541190b3ec1c24992ad61] traceID:[a6b644db82e541190b3ec1c24992ad61] error:[param error] 
+2019/12/28 16:53:55.952 [E] [registerUser.go:34]  logID:[70f03d89e3d8da22bcfc7a2a876ca2fe] traceID:[70f03d89e3d8da22bcfc7a2a876ca2fe] error:[param error] 
+2019/12/28 16:56:22.160 [E] [registerUser.go:34]  logID:[ca85e573f2f98874aff66b226cccbd0d] traceID:[ca85e573f2f98874aff66b226cccbd0d] error:[param error] 
+2019/12/29 22:18:01.972 [E] [registerUser.go:44]  logID:[fde1a7c2be9c74e5dd092a7de8ea3b6a] traceID:[fde1a7c2be9c74e5dd092a7de8ea3b6a] error:[db exist] 
+2019/12/29 22:19:37.868 [E] [registerUser.go:44]  logID:[1c71893033d90e7898ced59a83104da7] traceID:[1c71893033d90e7898ced59a83104da7] error:[db exist] 
+2019/12/29 22:31:55.101 [E] [registerUser.go:44]  logID:[d55843e78994e4b61bc1c1aee55344c6] traceID:[d55843e78994e4b61bc1c1aee55344c6] error:[db exist] 
+2019/12/29 22:31:55.857 [E] [registerUser.go:44]  logID:[182bd8906d2bfc50cba0744ea6fb1db3] traceID:[182bd8906d2bfc50cba0744ea6fb1db3] error:[db exist] 
+2019/12/29 22:31:55.994 [E] [registerUser.go:44]  logID:[7f4314867fd231da1ec8199ac7231c00] traceID:[7f4314867fd231da1ec8199ac7231c00] error:[db exist] 
+2019/12/29 22:31:56.141 [E] [registerUser.go:44]  logID:[bd54f86c1c97edf89ccd904041a897c3] traceID:[bd54f86c1c97edf89ccd904041a897c3] error:[db exist] 
+2019/12/29 22:31:56.319 [E] [registerUser.go:44]  logID:[45e4ab2c26f58664f7b6b1de2f96c50c] traceID:[45e4ab2c26f58664f7b6b1de2f96c50c] error:[db exist] 
+2019/12/29 22:31:56.534 [E] [registerUser.go:44]  logID:[7beb52bf5540121b532c9e45c317ec78] traceID:[7beb52bf5540121b532c9e45c317ec78] error:[db exist] 
+2019/12/29 22:58:39.515 [E] [registerUser.go:44]  logID:[b6943e8e80e105d94a67e0a9ef9e19e5] traceID:[b6943e8e80e105d94a67e0a9ef9e19e5] error:[db exist] 
+2019/12/29 22:58:50.481 [E] [registerUser.go:44]  logID:[79419363c6ae10a099b0254e80cddfd0] traceID:[79419363c6ae10a099b0254e80cddfd0] error:[db exist] 
+2019/12/29 23:05:22.592 [E] [login.go:44]  logID:[74cbf5b3723d6924a7212a9265022c0c] traceID:[74cbf5b3723d6924a7212a9265022c0c] error:[db data error] 
+2019/12/29 23:26:35.924 [E] [login.go:51]  logID:[70e6c6a7b6e90c727dff5e571d492e81] traceID:[70e6c6a7b6e90c727dff5e571d492e81] error:[db data error] 
+2019/12/29 23:29:34.059 [E] [login.go:51]  logID:[45e619de9c766aa7435615cc9c20ec79] traceID:[45e619de9c766aa7435615cc9c20ec79] error:[db data error] 
+2019/12/30 12:06:09.094 [E] [login.go:51]  logID:[c1c0a3651dad48848b245e343fb33387] traceID:[c1c0a3651dad48848b245e343fb33387] error:[db data error] 
+2019/12/30 12:20:59.392 [E] [login.go:51]  logID:[def8675f8728a43638179a96e5eb1c08] traceID:[def8675f8728a43638179a96e5eb1c08] error:[db data error] 
+2019/12/30 12:21:02.320 [E] [login.go:51]  logID:[0af95d22cc1c7cce18bf39df5c0b73b8] traceID:[0af95d22cc1c7cce18bf39df5c0b73b8] error:[db data error] 
+2019/12/30 12:21:20.121 [E] [login.go:51]  logID:[8c2b98f17c35f016aa1cce4a95356fcb] traceID:[8c2b98f17c35f016aa1cce4a95356fcb] error:[db data error] 
+2019/12/30 21:49:32.121 [E] [login.go:44]  logID:[be46a45cdecf87d655192d74bc8429b5] traceID:[be46a45cdecf87d655192d74bc8429b5] error:[db data error] 
+2019/12/30 21:49:32.491 [E] [login.go:44]  logID:[2cac3de10d9f8d9697dd9cc0a7a4e01f] traceID:[2cac3de10d9f8d9697dd9cc0a7a4e01f] error:[db data error] 
+2019/12/30 21:49:32.667 [E] [login.go:44]  logID:[9be34dec1d669f27f51b1dd1c2c75654] traceID:[9be34dec1d669f27f51b1dd1c2c75654] error:[db data error] 
+2019/12/30 21:49:32.854 [E] [login.go:44]  logID:[39b5819d3a0d0fea64b26137fcae4546] traceID:[39b5819d3a0d0fea64b26137fcae4546] error:[db data error] 
+2019/12/30 21:49:34.136 [E] [login.go:44]  logID:[20536087e1d3f5078dd558f800ff6531] traceID:[20536087e1d3f5078dd558f800ff6531] error:[db data error] 
+2019/12/30 21:49:34.360 [E] [login.go:44]  logID:[f2c4e7030ca7fbe9b181d9d8f720142e] traceID:[f2c4e7030ca7fbe9b181d9d8f720142e] error:[db data error] 
+2019/12/30 22:24:38.939 [E] [login.go:34]  logID:[cd01617373d6cba64d36d4255b7099d0] traceID:[cd01617373d6cba64d36d4255b7099d0] error:[param error] 
+2019/12/30 22:42:40.739 [E] [login.go:44]  logID:[f17c137bd482ff2e39bababcae915527] traceID:[f17c137bd482ff2e39bababcae915527] error:[db data error] 
+2019/12/30 22:42:43.073 [E] [login.go:44]  logID:[05448febfe2c2af276c9250a3ad0864c] traceID:[05448febfe2c2af276c9250a3ad0864c] error:[db data error] 
+2019/12/30 22:42:43.794 [E] [login.go:44]  logID:[1ad731e0050ecb1c15481ff0851b0d25] traceID:[1ad731e0050ecb1c15481ff0851b0d25] error:[db data error] 
+2019/12/30 22:42:44.055 [E] [login.go:44]  logID:[540036eee8e63c0b9de06d7a74dfe294] traceID:[540036eee8e63c0b9de06d7a74dfe294] error:[db data error] 
+2019/12/30 22:42:44.350 [E] [login.go:44]  logID:[19080029a186642f04e87781d7c926b7] traceID:[19080029a186642f04e87781d7c926b7] error:[db data error] 
+2020/02/02 21:32:36.281 [E] [login.go:44]  logID:[e8c6c4b516296112209cfb2e5de94657] traceID:[e8c6c4b516296112209cfb2e5de94657] error:[db data error] 
+2020/02/02 21:32:37.932 [E] [login.go:44]  logID:[af0aec94a2b9118083bb5eb263cca298] traceID:[af0aec94a2b9118083bb5eb263cca298] error:[db data error] 
+2020/02/02 21:32:38.374 [E] [login.go:44]  logID:[ba89743fcfbf5a0c404489fe2bbf6c8a] traceID:[ba89743fcfbf5a0c404489fe2bbf6c8a] error:[db data error] 
+2020/02/02 21:32:38.513 [E] [login.go:44]  logID:[b6a8fd60c5e902d761a3647f5854d345] traceID:[b6a8fd60c5e902d761a3647f5854d345] error:[db data error] 
+2020/02/02 21:32:38.661 [E] [login.go:44]  logID:[8b2c79c710e2babae0a2d2581673f62d] traceID:[8b2c79c710e2babae0a2d2581673f62d] error:[db data error] 
+2020/02/02 21:32:38.822 [E] [login.go:44]  logID:[77e22bb6de78f72be179ead71afc579c] traceID:[77e22bb6de78f72be179ead71afc579c] error:[db data error] 
+2020/02/02 21:32:39.025 [E] [login.go:44]  logID:[5ab088e955bad97c121d8437f406d7d1] traceID:[5ab088e955bad97c121d8437f406d7d1] error:[db data error] 
+2020/02/02 21:32:39.234 [E] [login.go:44]  logID:[1649468f3600d17f10223a72ce85b135] traceID:[1649468f3600d17f10223a72ce85b135] error:[db data error] 
+2020/02/02 21:32:39.453 [E] [login.go:44]  logID:[3e7e15b8c8d0fa55af23b3039743f8e8] traceID:[3e7e15b8c8d0fa55af23b3039743f8e8] error:[db data error] 
+2020/02/02 21:32:47.297 [E] [login.go:44]  logID:[b7f6c261952ab3d35f14ed57f5e7309d] traceID:[b7f6c261952ab3d35f14ed57f5e7309d] error:[db data error] 
+2020/02/02 21:32:47.788 [E] [login.go:44]  logID:[5e82eea891f6f398da80bbe4574520e3] traceID:[5e82eea891f6f398da80bbe4574520e3] error:[db data error] 
+2020/02/02 21:32:47.935 [E] [login.go:44]  logID:[d7faa6d085207aa2c8ebbb9a4d03347a] traceID:[d7faa6d085207aa2c8ebbb9a4d03347a] error:[db data error] 
+2020/02/02 21:32:48.082 [E] [login.go:44]  logID:[b14d6ca7f3c4f298742a6a81e472f2f7] traceID:[b14d6ca7f3c4f298742a6a81e472f2f7] error:[db data error] 
+2020/02/02 21:32:48.235 [E] [login.go:44]  logID:[4e17e0a9495e87eec54d502a786b6504] traceID:[4e17e0a9495e87eec54d502a786b6504] error:[db data error] 
+2020/02/02 21:32:48.452 [E] [login.go:44]  logID:[fb8f5b62c7b2e035ea4b1ca6968a367a] traceID:[fb8f5b62c7b2e035ea4b1ca6968a367a] error:[db data error] 
+2020/02/02 21:37:31.569 [E] [registerUser.go:44]  logID:[69da2740a267805a946df97c6604ba46] traceID:[69da2740a267805a946df97c6604ba46] error:[db exist] 
+2020/02/02 21:37:34.400 [E] [registerUser.go:44]  logID:[15cf989a640437d3c700a3561350f2de] traceID:[15cf989a640437d3c700a3561350f2de] error:[db exist] 
+2020/02/02 21:37:34.570 [E] [registerUser.go:44]  logID:[de42c07a044cd8d0c29e3e54b22b2636] traceID:[de42c07a044cd8d0c29e3e54b22b2636] error:[db exist] 
+2020/02/02 21:37:34.709 [E] [registerUser.go:44]  logID:[b3ddb8712ad9f5e8bc634bde92a9d2f6] traceID:[b3ddb8712ad9f5e8bc634bde92a9d2f6] error:[db exist] 
+2020/02/02 21:37:34.855 [E] [registerUser.go:44]  logID:[f598fe89826067034f2a9e7df9dc3367] traceID:[f598fe89826067034f2a9e7df9dc3367] error:[db exist] 
+2020/02/02 21:37:35.070 [E] [registerUser.go:44]  logID:[27b7f0d2dcf143edf6ca458b37958cae] traceID:[27b7f0d2dcf143edf6ca458b37958cae] error:[db exist] 
+2020/02/02 21:37:35.392 [E] [registerUser.go:44]  logID:[1a0a9e20c36257db4bb92723afdf7697] traceID:[1a0a9e20c36257db4bb92723afdf7697] error:[db exist] 
+2020/02/02 21:37:35.528 [E] [registerUser.go:44]  logID:[e3a5dea86a1ee60255ccf8d025ebc211] traceID:[e3a5dea86a1ee60255ccf8d025ebc211] error:[db exist] 
+2020/02/02 21:37:35.683 [E] [registerUser.go:44]  logID:[dcb16397a225b6ee713e9b6cef6d777e] traceID:[dcb16397a225b6ee713e9b6cef6d777e] error:[db exist] 
+2020/02/02 21:37:35.821 [E] [registerUser.go:44]  logID:[35637aa1050513c82d028cdca3d586c5] traceID:[35637aa1050513c82d028cdca3d586c5] error:[db exist] 
+2020/02/02 21:37:35.968 [E] [registerUser.go:44]  logID:[1eef6789ab1115eb5d23bb8b8fa86bfb] traceID:[1eef6789ab1115eb5d23bb8b8fa86bfb] error:[db exist] 
+2020/02/02 21:37:36.115 [E] [registerUser.go:44]  logID:[f3b02cca2c2de9ce0d71bcceffa6626d] traceID:[f3b02cca2c2de9ce0d71bcceffa6626d] error:[db exist] 
+2020/02/02 21:37:36.270 [E] [registerUser.go:44]  logID:[350870a1c3633d19d9dcf146e4efd965] traceID:[350870a1c3633d19d9dcf146e4efd965] error:[db exist] 
+2020/02/02 21:37:36.416 [E] [registerUser.go:44]  logID:[0fd3f906354cd1c5d63c4efcb075efd1] traceID:[0fd3f906354cd1c5d63c4efcb075efd1] error:[db exist] 
+2020/02/02 21:37:36.574 [E] [registerUser.go:44]  logID:[1a6630c89fc5e5da28a60f6a56dddfea] traceID:[1a6630c89fc5e5da28a60f6a56dddfea] error:[db exist] 
+2020/02/02 21:37:36.741 [E] [registerUser.go:44]  logID:[93fb7d13d2da9689f29b409ee4013d6c] traceID:[93fb7d13d2da9689f29b409ee4013d6c] error:[db exist] 
+2020/02/02 21:37:54.982 [E] [registerUser.go:44]  logID:[b84c915a4e2f9b592d5529bc02425ab4] traceID:[b84c915a4e2f9b592d5529bc02425ab4] error:[db exist] 
+2020/02/02 22:10:47.884 [E] [login.go:44]  logID:[cc8de52d13e9dded0cd75d20770c41f1] traceID:[cc8de52d13e9dded0cd75d20770c41f1] error:[db data error] 
+2020/02/02 22:10:48.049 [E] [login.go:44]  logID:[0de66b0bf94c6f32c0c8dff7398f17ba] traceID:[0de66b0bf94c6f32c0c8dff7398f17ba] error:[db data error] 
+2020/02/02 22:10:48.278 [E] [login.go:44]  logID:[10784ff9a75cdfdfebb4603ab8df0b6e] traceID:[10784ff9a75cdfdfebb4603ab8df0b6e] error:[db data error] 
+2020/02/02 22:10:48.452 [E] [login.go:44]  logID:[291c1db791d8f54f21f482a0c06a81aa] traceID:[291c1db791d8f54f21f482a0c06a81aa] error:[db data error] 
+2020/02/02 22:10:48.581 [E] [login.go:44]  logID:[c7fc2af6c48a1313ea5757eb70b34850] traceID:[c7fc2af6c48a1313ea5757eb70b34850] error:[db data error] 
+2020/02/02 22:10:48.795 [E] [login.go:44]  logID:[632781cbde9baa9e0b66296b008012a3] traceID:[632781cbde9baa9e0b66296b008012a3] error:[db data error] 
+2020/02/02 22:10:54.812 [E] [login.go:44]  logID:[88c515073944a9675481431ce68f4ff5] traceID:[88c515073944a9675481431ce68f4ff5] error:[db data error] 
+2020/02/02 22:10:54.964 [E] [login.go:44]  logID:[f8bc160863f4fbc7f13db8d49e8b01ab] traceID:[f8bc160863f4fbc7f13db8d49e8b01ab] error:[db data error] 
+2020/02/02 22:10:55.128 [E] [login.go:44]  logID:[b877be9249adf5e28a2082cbcf37efd1] traceID:[b877be9249adf5e28a2082cbcf37efd1] error:[db data error] 
+2020/02/02 22:10:55.280 [E] [login.go:44]  logID:[27414a981cd25b5456333ee6352edd0c] traceID:[27414a981cd25b5456333ee6352edd0c] error:[db data error] 
+2020/02/02 22:10:55.494 [E] [login.go:44]  logID:[b13eacbe7629c16cfd1d0c6cba6f0ce0] traceID:[b13eacbe7629c16cfd1d0c6cba6f0ce0] error:[db data error] 
