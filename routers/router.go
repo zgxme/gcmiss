@@ -16,4 +16,5 @@ func init() {
 	beego.Router("/api/v1/manager/register", &controllers.RegisterManagerController{}, "post:Register")
 	beego.Router("/api/v1/user/update", &controllers.UpdateUserController{}, "post:UpdateUser")
 	beego.Router("/api/v1/post/add", &controllers.AddPostController{}, "post:AddPost")
+	beego.Router("/api/v1/post/delete", &controllers.DeletePostController{}, "post:DeletePost")
 }

@@ -67,6 +67,7 @@ func (c *BaseController) RespData(resp *Resp) {
 }
 
 //RespDataV2 translate
+//TODO default value
 func (c *BaseController) RespDataV2(resp map[string]interface{}) {
 	c.Data["json"] = resp
 	c.ServeJSON()

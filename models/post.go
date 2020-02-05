@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 10:46:44
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-03 00:50:11
+ * @LastEditTime : 2020-02-06 01:15:53
  */
 
 package models
@@ -27,6 +27,7 @@ type Post struct {
 }
 
 //发帖子
+//TODO可以修改更加优雅的
 func AddPost(userId int64, postInfo map[string]interface{}) error {
 	o := orm.NewOrm()
 	user, err := GetUser(userId)
@@ -41,5 +42,21 @@ func AddPost(userId int64, postInfo map[string]interface{}) error {
 	post.Mtime = time.Now()
 	post.Status = 0
 	_, err = o.Insert(&post)
+	return err
+}
+
+//删除帖子
+func DeletePost(userId int64, postInfo map[string]interface{}) error {
+	o := orm.NewOrm()
+	postID := int64(postInfo["post_id"].(float64))
+	post := Post{Id: postID}
+	err := o.Read(&post)
+	if err != nil {
+		return err
+	}
+	if post.User.Id == userId {
+		post.Status = 1
+		_, err = o.Update(&post)
+	}
 	return err
 }
