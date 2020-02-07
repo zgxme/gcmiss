@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2019-12-14 15:15:04
+ * @LastEditors  : Zheng Gaoxiong
+ * @LastEditTime : 2020-02-08 01:36:18
+ */
 package controllers
 
 import (
@@ -6,16 +14,23 @@ import (
 	"github.com/astaxie/beego"
 )
 
-//Resp respose data
+//Resp respose base
 type Resp struct {
 	Errmsg    string `json:"errmsg"`
 	Errno     int    `json:"errno"`
 	RequestID string `json:"request_id"`
 }
 
+//Session response
+type Session struct {
+	Resp
+	Nickname string `json:"nickname"`
+	UserID   int64  `json:"user_id"`
+}
+
 //DataBase request data
 type DataBase struct {
-	Resp
+	Session
 }
 
 //BaseController base controller
@@ -61,8 +76,8 @@ func (c *BaseController) errLog(err string) string {
 }
 
 //RespData translate *RespData to json
-func (c *BaseController) RespData(resp *Resp) {
-	c.Data["json"] = resp
+func (c *BaseController) RespData(resp interface{}) {
+	c.Data["json"] = &resp
 	c.ServeJSON()
 }
 

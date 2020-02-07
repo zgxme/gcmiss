@@ -1,8 +1,12 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2019-12-14 21:22:51
+ * @LastEditors  : Zheng Gaoxiong
+ * @LastEditTime : 2020-02-08 01:27:00
+ */
 package controllers
-
-import (
-	"gcmiss/models"
-)
 
 //SessionController session controller
 type SessionController struct {
@@ -11,20 +15,14 @@ type SessionController struct {
 
 //GetSessionData get session
 func (r *SessionController) GetSessionData() {
-	resp := make(map[string]interface{})
-	reqID := r.GetreqID()
-	defer r.RespDataV2(resp)
-	user := models.User{}
-	resp["errno"] = DB_ERROR
-	resp["errmsg"] = RecodeErr(DB_ERROR)
-	resp["request_id"] = reqID
+	defer r.RespData(&r.Session)
 	nickname := r.GetSession("nickname")
 	userID := r.GetSession("user_id")
 	if nickname != nil {
-		user.Nickname = nickname.(string)
-		resp["errno"] = RECODE_OK
-		resp["present_user"] = nickname
-		resp["present_id"] = userID
-		resp["errmsg"] = recodeText[RECODE_OK]
+		r.Session.Nickname = nickname.(string)
+		r.Session.UserID = userID.(int64)
+	} else {
+		r.Errmsg = RecodeErr(AUTH_LOGIN)
+		r.Errno = AUTH_LOGIN
 	}
 }
