@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2019-12-13 23:29:09
+ * @LastEditors  : Zheng Gaoxiong
+ * @LastEditTime : 2020-02-08 02:31:56
+ */
 package routers
 
 import (
@@ -17,4 +25,5 @@ func init() {
 	beego.Router("/api/v1/user/update", &controllers.UpdateUserController{}, "post:UpdateUser")
 	beego.Router("/api/v1/post/add", &controllers.AddPostController{}, "post:AddPost")
 	beego.Router("/api/v1/post/delete", &controllers.DeletePostController{}, "post:DeletePost")
+	beego.Router("/api/v1/post/update", &controllers.UpdatePostController{}, "post:UpdatePost")
 }

@@ -2,9 +2,9 @@
  * @Descripttion:
  * @version:
  * @Author: Zheng Gaoxiong
- * @Date: 2020-02-02 23:20:43
+ * @Date: 2020-02-08 01:53:16
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 01:58:28
+ * @LastEditTime : 2020-02-08 03:10:14
  */
 package controllers
 
@@ -15,13 +15,13 @@ import (
 	"github.com/astaxie/beego"
 )
 
-//AddPostController add post controller
-type AddPostController struct {
+//update post controller
+type UpdatePostController struct {
 	BaseController
 }
 
-//AddPost add post
-func (r *AddPostController) AddPost() {
+//UpdatePost update post
+func (r *UpdatePostController) UpdatePost() {
 	postInfo := make(map[string]interface{})
 	defer r.RespData(&r.Resp)
 	err := json.Unmarshal(r.Ctx.Input.RequestBody, &postInfo)
@@ -29,6 +29,12 @@ func (r *AddPostController) AddPost() {
 		r.Errno = PARAM_ERROR
 		r.Errmsg = RecodeErr(PARAM_ERROR)
 		beego.Error(r.errLog(err.Error()))
+		return
+	}
+	if int64(postInfo["post_id"].(float64)) <= 0 {
+		r.Errno = PARAM_ERROR
+		r.Errmsg = RecodeErr(PARAM_ERROR)
+		beego.Error(r.Errmsg)
 		return
 	}
 	r.Errno = RECODE_OK
@@ -42,7 +48,7 @@ func (r *AddPostController) AddPost() {
 		beego.Error(r.errLog(RecodeErr(PARAM_ERROR)))
 		return
 	}
-	err = models.AddPost(userID.(int64), postInfo)
+	err = models.UpdatePost(userID.(int64), postInfo)
 	if err != nil {
 		r.Errno = DB_ERROR
 		r.Errmsg = RecodeErr(DB_ERROR)

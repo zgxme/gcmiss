@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 10:46:44
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-06 01:15:53
+ * @LastEditTime : 2020-02-08 02:37:27
  */
 
 package models
@@ -56,6 +56,26 @@ func DeletePost(userId int64, postInfo map[string]interface{}) error {
 	}
 	if post.User.Id == userId {
 		post.Status = 1
+		_, err = o.Update(&post)
+	}
+	return err
+}
+
+//更新帖子
+func UpdatePost(userId int64, postInfo map[string]interface{}) error {
+	o := orm.NewOrm()
+	postID := int64(postInfo["post_id"].(float64))
+	postContent := postInfo["content"].(string)
+	postTitle := postInfo["title"].(string)
+	post := Post{Id: postID}
+	err := o.Read(&post)
+	if err != nil {
+		return err
+	}
+	if post.User.Id == userId {
+		post.Content = postContent
+		post.Title = postTitle
+		post.Mtime = time.Now()
 		_, err = o.Update(&post)
 	}
 	return err
