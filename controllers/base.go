@@ -4,12 +4,13 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 15:15:04
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 01:36:18
+ * @LastEditTime : 2020-02-08 18:52:29
  */
 package controllers
 
 import (
 	"fmt"
+	"gcmiss/models"
 
 	"github.com/astaxie/beego"
 )
@@ -28,9 +29,17 @@ type Session struct {
 	UserID   int64  `json:"user_id"`
 }
 
+//PostResp response
+type PostResp struct {
+	Resp
+	PostList []models.PostItem `json:"post_list"`
+}
+
 //DataBase request data
 type DataBase struct {
+	Resp
 	Session
+	PostResp
 }
 
 //BaseController base controller
@@ -45,8 +54,14 @@ func (c *BaseController) Prepare() {
 	c.Ctx.Input.SetData("requestId", RequestID)
 	c.baseLog()
 	c.RequestID = RequestID
+	c.Session.RequestID = RequestID
+	c.PostResp.RequestID = RequestID
 	c.Errno = RECODE_OK
+	c.Session.Errno = RECODE_OK
+	c.PostResp.Errno = RECODE_OK
 	c.Errmsg = recodeText[RECODE_OK]
+	c.Session.Errmsg = recodeText[RECODE_OK]
+	c.PostResp.Errmsg = recodeText[RECODE_OK]
 }
 
 //GetreqID get request id

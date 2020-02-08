@@ -1,3 +1,12 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2019-12-14 10:37:58
+ * @LastEditors  : Zheng Gaoxiong
+ * @LastEditTime : 2020-02-08 18:56:55
+ */
+
 package models
 
 //学生身份

@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2020-02-02 23:20:43
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 01:58:28
+ * @LastEditTime : 2020-02-08 16:16:11
  */
 package controllers
 
@@ -31,8 +31,6 @@ func (r *AddPostController) AddPost() {
 		beego.Error(r.errLog(err.Error()))
 		return
 	}
-	r.Errno = RECODE_OK
-	r.Errmsg = RecodeErr(RECODE_OK)
 	//获取当前用户
 	nickName := r.GetSession("nickname")
 	userID := r.GetSession("user_id")

@@ -2,10 +2,11 @@ package models
 
 import (
 	"fmt"
+	"time"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
-	"time"
 )
 
 func Init() {
@@ -22,7 +23,7 @@ func Init() {
 	_ = orm.RegisterDataBase("default", "mysql", dataSource, maxIdle, maxConn)
 	beego.Info("connect db success!")
 	orm.DefaultTimeLoc = time.UTC
-	orm.RegisterModelWithPrefix(tablePre, new(User), new(Profile), new(Manager),new(Post))
+	orm.RegisterModelWithPrefix(tablePre, new(User), new(Profile), new(Manager), new(Post))
 	_ = orm.RunSyncdb("default", true, true)
 
 }

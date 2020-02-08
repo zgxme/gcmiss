@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 21:22:51
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 01:27:00
+ * @LastEditTime : 2020-02-08 16:22:58
  */
 package controllers
 
@@ -22,7 +22,7 @@ func (r *SessionController) GetSessionData() {
 		r.Session.Nickname = nickname.(string)
 		r.Session.UserID = userID.(int64)
 	} else {
-		r.Errmsg = RecodeErr(AUTH_LOGIN)
-		r.Errno = AUTH_LOGIN
+		r.Session.Errmsg = RecodeErr(AUTH_LOGIN)
+		r.Session.Errno = AUTH_LOGIN
 	}
 }
