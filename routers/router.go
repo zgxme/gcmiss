@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-13 23:29:09
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 16:17:55
+ * @LastEditTime : 2020-02-09 13:19:12
  */
 package routers
 
@@ -27,4 +27,8 @@ func init() {
 	beego.Router("/api/v1/post/delete", &controllers.DeletePostController{}, "post:DeletePost")
 	beego.Router("/api/v1/post/update", &controllers.UpdatePostController{}, "post:UpdatePost")
 	beego.Router("/api/v1/post/getall", &controllers.GetPostController{}, "get:GetPost")
+	beego.Router("/api/v1/artical/add", &controllers.AddArticalController{}, "post:AddArtical")
+	beego.Router("/api/v1/artical/delete", &controllers.DeleteArticalController{}, "post:DeleteArtical")
+	beego.Router("/api/v1/artical/update", &controllers.UpdateArticalController{}, "post:UpdateArtical")
+	beego.Router("/api/v1/artical/getall", &controllers.GetArticalController{}, "get:GetArtical")
 }

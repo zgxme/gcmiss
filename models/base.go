@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2019-12-14 10:27:00
+ * @LastEditors  : Zheng Gaoxiong
+ * @LastEditTime : 2020-02-09 14:08:03
+ */
 package models
 
 import (
@@ -10,6 +18,7 @@ import (
 )
 
 func Init() {
+
 	mysqluser := beego.AppConfig.String("mysqluser")
 	mysqlpass := beego.AppConfig.String("mysqlpass")
 	mysqlurl := beego.AppConfig.String("mysqlurl")
@@ -19,12 +28,14 @@ func Init() {
 	maxIdle, _ := beego.AppConfig.Int("maxIdle")
 	tablePre := beego.AppConfig.String("tablepre")
 	_ = orm.RegisterDriver("mysql", orm.DRMySQL)
-	dataSource := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8", mysqluser, mysqlpass, mysqlurl, mysqlpor, mysqldb)
+	dataSource := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8&loc=Asia%%2FShanghai", mysqluser, mysqlpass, mysqlurl, mysqlpor, mysqldb)
 	_ = orm.RegisterDataBase("default", "mysql", dataSource, maxIdle, maxConn)
 	beego.Info("connect db success!")
 	orm.DefaultTimeLoc = time.UTC
-	orm.RegisterModelWithPrefix(tablePre, new(User), new(Profile), new(Manager), new(Post))
-	_ = orm.RunSyncdb("default", true, true)
+	orm.RegisterModelWithPrefix(tablePre, new(User), new(Profile), new(Manager), new(Post), new(Artical))
+	mysqlforce, _ := beego.AppConfig.Bool("mysqlforce")
+	mysqlverbose, _ := beego.AppConfig.Bool("mysqlverbose")
+	_ = orm.RunSyncdb("default", mysqlforce, mysqlverbose)
 
 }
 

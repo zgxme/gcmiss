@@ -2,9 +2,9 @@
  * @Descripttion:
  * @version:
  * @Author: Zheng Gaoxiong
- * @Date: 2020-02-02 23:20:43
+ * @Date: 2020-02-09 13:04:03
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-09 11:15:13
+ * @LastEditTime : 2020-02-09 14:17:33
  */
 package controllers
 
@@ -15,22 +15,30 @@ import (
 	"github.com/astaxie/beego"
 )
 
-//AddPostController add post controller
-type AddPostController struct {
+//update artical controller
+type UpdateArticalController struct {
 	BaseController
 }
 
-//AddPost add post
-func (r *AddPostController) AddPost() {
-	postInfo := make(map[string]interface{})
+//UpdateArtical update artical
+func (r *UpdateArticalController) UpdateArtical() {
+	articalInfo := make(map[string]interface{})
 	defer r.RespData(&r.Resp)
-	err := json.Unmarshal(r.Ctx.Input.RequestBody, &postInfo)
+	err := json.Unmarshal(r.Ctx.Input.RequestBody, &articalInfo)
 	if err != nil {
 		r.Errno = PARAM_ERROR
 		r.Errmsg = RecodeErr(PARAM_ERROR)
 		beego.Error(r.errLog(err.Error()))
 		return
 	}
+	if int64(articalInfo["artical_id"].(float64)) <= 0 {
+		r.Errno = PARAM_ERROR
+		r.Errmsg = RecodeErr(PARAM_ERROR)
+		beego.Error(r.Errmsg)
+		return
+	}
+	r.Errno = RECODE_OK
+	r.Errmsg = RecodeErr(RECODE_OK)
 	//获取当前用户
 	nickName := r.GetSession("nickname")
 	userID := r.GetSession("user_id")
@@ -40,7 +48,7 @@ func (r *AddPostController) AddPost() {
 		beego.Error(r.errLog(RecodeErr(PARAM_ERROR)))
 		return
 	}
-	err = models.AddPost(userID.(int64), postInfo)
+	err = models.UpdateArtical(userID.(int64), articalInfo)
 	if err != nil {
 		r.Errno = DB_ERROR
 		r.Errmsg = RecodeErr(DB_ERROR)

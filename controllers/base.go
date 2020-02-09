@@ -4,13 +4,13 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 15:15:04
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 18:52:29
+ * @LastEditTime : 2020-02-09 15:04:37
  */
 package controllers
 
 import (
 	"fmt"
-	"gcmiss/models"
+	. "gcmiss/models"
 
 	"github.com/astaxie/beego"
 )
@@ -24,15 +24,21 @@ type Resp struct {
 
 //Session response
 type Session struct {
-	Resp
 	Nickname string `json:"nickname"`
 	UserID   int64  `json:"user_id"`
+	Resp
 }
 
 //PostResp response
 type PostResp struct {
+	PostList []PostItem `json:"post_list"`
 	Resp
-	PostList []models.PostItem `json:"post_list"`
+}
+
+//ArticalResp response
+type ArticalResp struct {
+	ArticalList []ArticalItem `json:"artical_list"`
+	Resp
 }
 
 //DataBase request data
@@ -40,6 +46,7 @@ type DataBase struct {
 	Resp
 	Session
 	PostResp
+	ArticalResp
 }
 
 //BaseController base controller
@@ -54,14 +61,21 @@ func (c *BaseController) Prepare() {
 	c.Ctx.Input.SetData("requestId", RequestID)
 	c.baseLog()
 	c.RequestID = RequestID
-	c.Session.RequestID = RequestID
-	c.PostResp.RequestID = RequestID
 	c.Errno = RECODE_OK
-	c.Session.Errno = RECODE_OK
-	c.PostResp.Errno = RECODE_OK
 	c.Errmsg = recodeText[RECODE_OK]
+
+	c.Session.RequestID = RequestID
+	c.Session.Errno = RECODE_OK
 	c.Session.Errmsg = recodeText[RECODE_OK]
+
+	c.PostResp.RequestID = RequestID
+	c.PostResp.Errno = RECODE_OK
 	c.PostResp.Errmsg = recodeText[RECODE_OK]
+
+	c.ArticalResp.RequestID = RequestID
+	c.ArticalResp.Errno = RECODE_OK
+	c.ArticalResp.Errmsg = recodeText[RECODE_OK]
+
 }
 
 //GetreqID get request id

@@ -2,9 +2,9 @@
  * @Descripttion:
  * @version:
  * @Author: Zheng Gaoxiong
- * @Date: 2020-02-02 23:20:43
+ * @Date: 2020-02-09 11:14:43
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-09 11:15:13
+ * @LastEditTime : 2020-02-09 11:30:55
  */
 package controllers
 
@@ -15,16 +15,16 @@ import (
 	"github.com/astaxie/beego"
 )
 
-//AddPostController add post controller
-type AddPostController struct {
+//AddArticalController add artical controller
+type AddArticalController struct {
 	BaseController
 }
 
-//AddPost add post
-func (r *AddPostController) AddPost() {
-	postInfo := make(map[string]interface{})
+//AddArtical add artical
+func (r *AddArticalController) AddArtical() {
+	articalInfo := make(map[string]interface{})
 	defer r.RespData(&r.Resp)
-	err := json.Unmarshal(r.Ctx.Input.RequestBody, &postInfo)
+	err := json.Unmarshal(r.Ctx.Input.RequestBody, &articalInfo)
 	if err != nil {
 		r.Errno = PARAM_ERROR
 		r.Errmsg = RecodeErr(PARAM_ERROR)
@@ -40,7 +40,7 @@ func (r *AddPostController) AddPost() {
 		beego.Error(r.errLog(RecodeErr(PARAM_ERROR)))
 		return
 	}
-	err = models.AddPost(userID.(int64), postInfo)
+	err = models.AddArtical(userID.(int64), articalInfo)
 	if err != nil {
 		r.Errno = DB_ERROR
 		r.Errmsg = RecodeErr(DB_ERROR)
