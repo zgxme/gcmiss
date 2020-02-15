@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 16:14:06
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 15:10:18
+ * @LastEditTime : 2020-02-15 23:28:29
  */
 package controllers
 
@@ -16,6 +16,8 @@ const (
 	DB_NOT_EXIST     = 4004
 	DB_ADD_SELF      = 4005
 	DB_ERROR         = 4009
+	FILE_ERROR       = 4012
+	FORMAT_ERROR     = 4013
 	RECODE_UNKNOWERR = 4000
 	AUTH_LOGIN       = 5004
 )
@@ -30,6 +32,8 @@ var recodeText = map[int]string{
 	RECODE_UNKNOWERR: "unknow error",
 	RECODE_DATAERR:   "db data error",
 	AUTH_LOGIN:       "auth err",
+	FILE_ERROR:       "get file error",
+	FORMAT_ERROR:     "file format error",
 }
 
 //RecodeErr get errmsg
@@ -39,4 +43,10 @@ func RecodeErr(code int) string {
 		return str
 	}
 	return RecodeErr(RECODE_UNKNOWERR)
+}
+
+var AllowExtMap map[string]bool = map[string]bool{
+	".jpg":  true,
+	".jpeg": true,
+	".png":  true,
 }

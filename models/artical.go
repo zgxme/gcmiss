@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Zheng Gaoxiong
+ * @Date: 2020-02-09 00:11:06
+ * @LastEditors  : Zheng Gaoxiong
+ * @LastEditTime : 2020-02-15 15:30:37
+ */
 package models
 
 import (
@@ -8,14 +16,6 @@ import (
 	"github.com/astaxie/beego/orm"
 )
 
-/*
- * @Descripttion:
- * @version:
- * @Author: Zheng Gaoxiong
- * @Date: 2020-02-09 00:11:06
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-09 14:35:12
- */
 type ArticalItem struct {
 	ArticalID   int64   `json:"artical_id"`
 	Name        string  `json:"artical_name"`
@@ -33,7 +33,8 @@ type Artical struct {
 	Description string    //物品描述
 	Price       float64   //物品价格
 	Status      int8      //0正常 1被删除
-	User        *User     `json:"user" orm:"rel(fk);index"` //设置一对多的反向关系 物品创建人
+	User        *User     `json:"user" orm:"rel(fk);index"`   //设置一对多的反向关系 物品创建人
+	Image       []*Image  `json:"images" orm:"reverse(many)"` //帖子的图片
 	Ctime       time.Time //创建时间
 	Mtime       time.Time //修改时间
 }

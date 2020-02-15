@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 10:46:44
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-09 11:22:36
+ * @LastEditTime : 2020-02-15 15:29:31
  */
 
 package models
@@ -34,7 +34,8 @@ type Post struct {
 	Mtime   time.Time //修改时间
 	Content string    //帖子内容
 	Status  int8      //0正常 1被删除
-	User    *User     `json:"user" orm:"rel(fk);index"` //设置一对多的反向关系 发帖人
+	User    *User     `json:"user" orm:"rel(fk);index"`   //设置一对多的反向关系 发帖人
+	Image   []*Image  `json:"images" orm:"reverse(many)"` //帖子的图片
 }
 
 //发帖子

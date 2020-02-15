@@ -4,7 +4,7 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 10:25:34
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-03 00:49:02
+ * @LastEditTime : 2020-02-15 15:32:37
  */
 package models
 
@@ -19,14 +19,16 @@ const PROFILE_TABNAME = "tb_profile"
 
 //用户
 type User struct {
-	Id        int64    //beego默认Id为主键,且自增长
-	Nickname  string   `orm:"unique"` //用户名唯一
-	Password  string   //密码
-	Status    int64    //认证状态
-	AvatarUrl string   //头像
-	Profile   *Profile `orm:"rel(one)"` //设置一对一的反向关系
+	Id       int64    //beego默认Id为主键,且自增长
+	Nickname string   `orm:"unique"` //用户名唯一
+	Password string   //密码
+	Status   int64    //认证状态
+	Avatar   *Avatar  `orm:"rel(one)"` //头像 设置一对一的反向关系
+	Profile  *Profile `orm:"rel(one)"` //真实身份 设置一对一的反向关系
 	//Manager   *Manager `orm:"rel(one)"`
-	Posts []*Post `json:"post" orm:"reverse(many)"`
+	Image    []*Image   `json:"images" orm:"reverse(many)"`
+	Articals []*Artical `json:"articals" orm:"reverse(many)"`
+	Posts    []*Post    `json:"posts" orm:"reverse(many)"`
 }
 
 //判断一个用户是否存在

@@ -4,12 +4,13 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 14:24:02
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 00:38:36
+ * @LastEditTime : 2020-02-15 16:23:24
  */
 package controllers
 
 import (
 	"encoding/json"
+	"fmt"
 	"gcmiss/models"
 
 	"github.com/astaxie/beego"
@@ -57,8 +58,21 @@ func (r *RegisterController) Register() {
 	//DONE add salt
 	user.Password = GetPassword(passWord)
 	profile := models.Profile{}
+	avatar := models.Avatar{}
+	md5Name := GetMd5String(nickName)
+	avatar.AvatarName = GetMd5String(nickName + md5Name)
+	avatar.Url = fmt.Sprintf("https://cdn.v2ex.com/gravatar/%s?&d=retro", avatar.AvatarName)
+	user.Avatar = &avatar
 	user.Profile = &profile
+
 	_, err = o.Insert(&profile)
+	if err != nil {
+		r.Errno = DB_ERROR
+		r.Errmsg = RecodeErr(DB_ERROR)
+		beego.Error(r.errLog(err.Error()))
+		return
+	}
+	_, err = o.Insert(&avatar)
 	if err != nil {
 		r.Errno = DB_ERROR
 		r.Errmsg = RecodeErr(DB_ERROR)
