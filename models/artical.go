@@ -3,7 +3,7 @@
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2020-02-09 00:11:06
- * @LastEditors  : Zheng Gaoxiong
+ * @LastEditors: Zheng Gaoxiong
  * @LastEditTime : 2020-02-15 15:30:37
  */
 package models
@@ -28,15 +28,15 @@ type ArticalItem struct {
 
 //物品
 type Artical struct {
-	Id          int64     //beego默认Id为主键,且自增长
-	Name        string    //物品名称
-	Description string    //物品描述
-	Price       float64   //物品价格
-	Status      int8      //0正常 1被删除
-	User        *User     `json:"user" orm:"rel(fk);index"`   //设置一对多的反向关系 物品创建人
-	Image       []*Image  `json:"images" orm:"reverse(many)"` //帖子的图片
-	Ctime       time.Time //创建时间
-	Mtime       time.Time //修改时间
+	Id          int64   //beego默认Id为主键,且自增长
+	Name        string  //物品名称
+	Description string  //物品描述
+	Price       float64 //物品价格
+	Status      int8    //0正常 1被删除
+	User        *User   `json:"user" orm:"rel(fk);index"` //设置一对多的反向关系 物品创建人
+	// Image       []*Image  `json:"images" orm:"reverse(many)"` //帖子的图片
+	Ctime time.Time //创建时间
+	Mtime time.Time //修改时间
 }
 
 //发布物品

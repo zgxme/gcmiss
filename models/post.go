@@ -3,7 +3,7 @@
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 10:46:44
- * @LastEditors  : Zheng Gaoxiong
+ * @LastEditors: Zheng Gaoxiong
  * @LastEditTime : 2020-02-15 15:29:31
  */
 
@@ -16,6 +16,11 @@ import (
 
 	"github.com/astaxie/beego/orm"
 )
+
+type PostReq struct {
+	Title   string `form:"title"`
+	Content string `form:"content"`
+}
 
 type PostItem struct {
 	PostId     int64  `json:"post_id"`
@@ -40,7 +45,7 @@ type Post struct {
 
 //发帖子
 //TODO可以修改更加优雅的
-func AddPost(userId int64, postInfo map[string]interface{}) error {
+func AddPost(userId int64, postInfo *PostReq, images []*Image) error {
 	o := orm.NewOrm()
 	user, err := GetUser(userId)
 	if err != nil {
@@ -48,12 +53,22 @@ func AddPost(userId int64, postInfo map[string]interface{}) error {
 	}
 	var post Post
 	post.User = user
-	post.Title = postInfo["title"].(string)
-	post.Content = postInfo["content"].(string)
+	post.Title = postInfo.Title
+	post.Content = postInfo.Content
 	post.Ctime = time.Now()
 	post.Mtime = time.Now()
 	post.Status = 0
-	_, err = o.Insert(&post)
+	if _, err := o.Insert(&post); err != nil {
+		return err
+	}
+
+	for _, image := range images {
+		image.User = user
+		image.Post = &post
+		if err := AddImage(image); err != nil {
+			return err
+		}
+	}
 	return err
 }
 
