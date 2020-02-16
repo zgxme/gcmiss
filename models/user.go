@@ -4,13 +4,12 @@
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 10:25:34
  * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-15 15:32:37
+ * @LastEditTime : 2020-02-16 11:18:00
  */
 package models
 
 import (
 	"fmt"
-	"strconv"
 
 	"github.com/astaxie/beego/orm"
 )
@@ -29,6 +28,19 @@ type User struct {
 	Image    []*Image   `json:"images" orm:"reverse(many)"`
 	Articals []*Artical `json:"articals" orm:"reverse(many)"`
 	Posts    []*Post    `json:"posts" orm:"reverse(many)"`
+}
+type ProfileItem struct {
+	ID         int64  `form:"-"`
+	Name       string `form:"name"`
+	StuID      string `form:"stu_id"`
+	School     string `form:"school"`
+	Profession string `form:"profession"`
+	grade      string `form:"grade"`
+	Sex        int    `form:"sex"`
+	QQNumber   string `form:"qq_number"`
+	Email      string `form:"email"`
+	TelNumber  string `form:"telnumber"`
+	// Avatar     interface{} `form:"avatar"`
 }
 
 //判断一个用户是否存在
@@ -50,15 +62,23 @@ func GetOneuserID(nickName string) int64 {
 	return user.Id
 }
 
-func UpdateProfile(userID interface{}, userInfo map[string]interface{}) error {
-	name := userInfo["name"].(string)
-	stuId := userInfo["stu_id"].(string)
-	school := userInfo["school"].(string)
-	profession := userInfo["profession"].(string)
-	sex, _ := strconv.Atoi(userInfo["sex"].(string))
-	qqNumber := userInfo["qq_number"].(string)
-	email := userInfo["email"].(string)
-	telNum := userInfo["telNum"].(string)
+func UpdateProfile(userID interface{}, profile *ProfileItem) error {
+	// name := userInfo["name"].(string)
+	// stuId := userInfo["stu_id"].(string)
+	// school := userInfo["school"].(string)
+	// profession := userInfo["profession"].(string)
+	// sex, _ := strconv.Atoi(userInfo["sex"].(string))
+	// qqNumber := userInfo["qq_number"].(string)
+	// email := userInfo["email"].(string)
+	// telNum := userInfo["telNum"].(string)
+	name := profile.Name
+	stuId := profile.StuID
+	school := profile.School
+	profession := profile.Profession
+	sex := profile.Sex
+	qqNumber := profile.QQNumber
+	email := profile.Email
+	telNum := profile.TelNumber
 	o := orm.NewOrm()
 	var user User
 	err := o.QueryTable("tb_user").Filter("id", userID.(int64)).One(&user)
