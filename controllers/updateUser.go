@@ -1,16 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion: user update api
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-15 21:42:55
  * @LastEditors: Zheng Gaoxiong
- * @LastEditTime : 2020-02-16 11:58:03
- */
-/**
- * @Author: zhenggaoxiong
- * @Description: update user info
- * @File:  updateUser
- * @Date: 2019/12/15 21:42
+ * @LastEditTime: 2020-03-21 15:24:51
  */
 package controllers
 
@@ -27,19 +21,38 @@ import (
 	"github.com/astaxie/beego"
 )
 
+//user update api
 type UpdateUserController struct {
 	SessionController
 	models.User
 }
 
-//TODO user nickname update
+// @Title userRealInfoUpdate
+// @Description user update real info
+// @Param name	formData	string	false	"The real name of user"
+// @Param stu_id	formData string false "The stu_id of user"
+// @Param school	formData string false "The school of user"
+// @Param profession	formData string false "The profession of user"
+// @Param grade	formData string false "The grade of user"
+// @Param sex formData int false "The sex of user"
+// @Param qq_number	formData int false "The qq_number of user"
+// @Param	email	formData string false "The email of user"
+// @Param telnumber	formData string false "The telnumber of user"
+// @Param	avatar	formData	file	"The avatar	of user"
+// @Success 200 {object} models.ZDTCustomer.Customer
+// @Failure	2	param error
+// @Failure 4002	db data error
+// @Failure 4009	db error
+// @Failure 4012	get file error
+// @Failure	4013	file format error
+// @router /update [post]
 func (r *UpdateUserController) UpdateUser() {
 	defer r.RespData(&r.Resp)
 	// userInfo := make(map[string]interface{})
 	profile := ProfileItem{}
 	if err := r.ParseForm(&profile); err != nil {
-		r.Errno = FILE_ERROR
-		r.Errmsg = RecodeErr(FILE_ERROR)
+		r.Errno = PARAM_ERROR
+		r.Errmsg = RecodeErr(PARAM_ERROR)
 		beego.Error(r.errLog(err.Error()))
 		return
 	}

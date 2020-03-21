@@ -3,8 +3,8 @@
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 14:24:02
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-15 16:23:24
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-03-21 14:19:53
  */
 package controllers
 
@@ -17,12 +17,20 @@ import (
 	"github.com/astaxie/beego/orm"
 )
 
-//RegisterController regiser controller
+//user regiser API
 type RegisterController struct {
 	BaseController
 }
 
-//Register user register api
+// @Title userRegister
+// @Description user regiseter by nickname and password
+// @Param	nickname	body	string	true	"The nickname of user register"
+// @Param password	body	string	true	"The password of user register"
+// @Success 200 {object} models.ZDTCustomer.Customer
+// @Failure	2	param error
+// @Failure 4003	db exist
+// @Failure 4009	db error
+// @router /register [post]
 func (r *RegisterController) Register() {
 	userInfo := make(map[string]interface{})
 	defer r.RespData(&r.Resp)

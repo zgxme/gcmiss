@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion: add post api
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2020-02-02 23:20:43
  * @LastEditors: Zheng Gaoxiong
- * @LastEditTime : 2020-02-09 11:15:13
+ * @LastEditTime: 2020-03-21 16:15:38
  */
 package controllers
 
@@ -22,12 +22,24 @@ import (
 	"github.com/astaxie/beego"
 )
 
-//AddPostController add post controller
+//add post api
 type AddPostController struct {
 	BaseController
 }
 
-//AddPost add post
+// @Title
+// @Description user add post
+// @Param name	formData	string	false	"The real name of user"
+// @Param	title	formData	string	true	"The	title of post"
+// @Param content formData	string	true	"The content of post"
+// @Param images	formData	file	true	"the images of post"
+// @Success 200 {object} models.ZDTCustomer.Customer
+// @Failure	2	param error
+// @Failure 4002	db data error
+// @Failure 4009	db error
+// @Failure 4012	get file error
+// @Failure	4013	file format error
+// @router /add [post]
 func (r *AddPostController) AddPost() {
 	// postInfo := make(map[string]interface{})
 	defer r.RespData(&r.Resp)

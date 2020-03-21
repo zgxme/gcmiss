@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion:delete post api
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2020-02-03 23:15:01
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-06 00:55:02
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-03-21 17:07:13
  */
 package controllers
 
@@ -15,12 +15,18 @@ import (
 	"github.com/astaxie/beego"
 )
 
-//DeletePostController delete post controller
+//delete post api
 type DeletePostController struct {
 	BaseController
 }
 
-//deletePost delete post
+// @Title
+// @Description user delete post
+// @Param post_id	body	string	true	"The id of post"
+// @Success 200 {object} models.ZDTCustomer.Customer
+// @Failure	2	param error
+// @Failure 4009	db error
+// @router /delete [post]
 func (r *DeletePostController) DeletePost() {
 	postInfo := make(map[string]interface{})
 	defer r.RespData(&r.Resp)

@@ -1,19 +1,24 @@
 /*
- * @Descripttion:
+ * @Descripttion: session api
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 21:22:51
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 16:22:58
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-03-21 14:35:33
  */
 package controllers
 
-//SessionController session controller
+//session api
 type SessionController struct {
 	BaseController
 }
 
-//GetSessionData get session
+// @Title getSession
+// @Description user get session
+// @Success 200 {object} models.ZDTCustomer.Customer
+// @Failure 5004 auth error
+// @router /get [get]
+
 func (r *SessionController) GetSessionData() {
 	defer r.RespData(&r.Session)
 	nickname := r.GetSession("nickname")

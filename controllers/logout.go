@@ -7,13 +7,11 @@
 
 package controllers
 
-//Logout logout api
+// @Title userLogout
+// @Description user logout
+// @Success 200 {object} models.ZDTCustomer.Customer
+// @router /logout [post]
 func (r *SessionController) Logout() {
-	// resp := make(map[string]interface{})
-	// reqID := r.GetreqID()
-	// r.Errno = RECODE_OK
-	// r.Errmsg = RecodeErr(RECODE_OK)
-	// resp["request_id"] = reqID
 	defer r.RespData(&r.Resp)
 	r.DelSession("nickname")
 	r.DelSession("user_id")

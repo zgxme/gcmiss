@@ -3,9 +3,13 @@
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-13 23:29:09
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-14 23:41:32
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-03-21 16:04:26
  */
+// @APIVersion 1.0.0
+// @Title gcmiss API
+// @Description The API of gcmiss
+// @Contact purifiedzheng@gmail.com
 package routers
 
 import (
@@ -16,19 +20,59 @@ import (
 
 func init() {
 	//api
-	beego.Router("*", &controllers.MainController{})
-	beego.Router("/api/v1/user/register", &controllers.RegisterController{}, "post:Register")
-	beego.Router("/api/v1/login", &controllers.SessionController{}, "post:Login")
-	beego.Router("/api/v1/logout", &controllers.SessionController{}, "post:Logout")
-	beego.Router("/api/v1/session/get", &controllers.SessionController{}, "get:GetSessionData")
-	beego.Router("/api/v1/manager/register", &controllers.RegisterManagerController{}, "post:Register")
-	beego.Router("/api/v1/user/update", &controllers.UpdateUserController{}, "post:UpdateUser")
-	beego.Router("/api/v1/post/add", &controllers.AddPostController{}, "post:AddPost")
-	beego.Router("/api/v1/post/delete", &controllers.DeletePostController{}, "post:DeletePost")
-	beego.Router("/api/v1/post/update", &controllers.UpdatePostController{}, "post:UpdatePost")
-	beego.Router("/api/v1/post/getall", &controllers.GetPostController{}, "get:GetPost")
-	beego.Router("/api/v1/artical/add", &controllers.AddArticalController{}, "post:AddArtical")
-	beego.Router("/api/v1/artical/delete", &controllers.DeleteArticalController{}, "post:DeleteArtical")
-	beego.Router("/api/v1/artical/update", &controllers.UpdateArticalController{}, "post:UpdateArtical")
-	beego.Router("/api/v1/artical/getall", &controllers.GetArticalController{}, "get:GetArtical")
+	ns := beego.NewNamespace("/api/v1",
+		beego.NSNamespace("/user",
+			beego.NSInclude(
+				&controllers.RegisterController{},
+				&controllers.SessionController{},
+				&controllers.UpdateUserController{},
+			),
+		),
+		beego.NSNamespace("/manager",
+			beego.NSInclude(
+				&controllers.RegisterManagerController{},
+			),
+		),
+		beego.NSNamespace("/post",
+			beego.NSInclude(
+				&controllers.AddPostController{},
+				&controllers.DeletePostController{},
+				&controllers.UpdatePostController{},
+				&controllers.GetPostController{},
+			),
+		),
+		beego.NSNamespace("/artical",
+			beego.NSInclude(
+			),
+		),
+		// beego.NSNamespace("/manager",
+		// 	beego.NSInclude(
+		// 		&controllers.RegisterManagerController{},
+		// 	),
+		// ),
+		// beego.NSNamespace("/session",
+		// 	beego.NSInclude(
+		// 		&controllers.SessionController{},
+		// 	),
+		// ),
+		// beego.NSNamespace("post",
+		// 	beego.NSInclude(
+		// 		&controllers.AddPostController{},
+		// 		&controllers.DeletePostController{},
+		// 		&controllers.UpdatePostController{},
+		// 		&controllers.GetPostController{},
+		// 	),
+		// ),
+		// beego.NSNamespace("artical",
+		// 	beego.NSInclude(
+		// 		&controllers.AddArticalController{},
+		// 		&controllers.DeleteArticalController{},
+		// 		&controllers.UpdateArticalController{},
+		// 		&controllers.GetArticalController{},
+		// 	),
+		// ),
+	)
+	// beego.Router("*", &controllers.MainController{})
+	beego.AddNamespace(ns)
+	beego.SetStaticPath("/swagger", "swagger")
 }

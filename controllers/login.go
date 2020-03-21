@@ -1,18 +1,11 @@
 /*
- * @Descripttion:
+ * @Descripttion: login api
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-15 11:22:26
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-08 14:07:45
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-03-21 14:31:42
  */
-/**
- * @Author: zhenggaoxiong
- * @Description: user login api
- * @File:  login
- * @Date: 2019/12/15 11:22
- */
-
 package controllers
 
 import (
@@ -23,7 +16,14 @@ import (
 	"github.com/astaxie/beego/orm"
 )
 
-//Login login api
+// @Title userLogin
+// @Description user login by nickname and password
+// @Param	nickname	body	string	true	"The nickname of user register"
+// @Param password	body	string	true	"The password of user register"
+// @Success 200 {object} models.ZDTCustomer.Customer
+// @Failure	2	param error
+// @Failure 4002	db data error
+// @router /login [post]
 func (r *SessionController) Login() {
 	defer r.RespData(&r.Resp)
 	userInfo := make(map[string]interface{})

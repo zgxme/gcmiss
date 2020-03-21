@@ -3,8 +3,8 @@
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-14 16:14:06
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-15 23:28:29
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-03-21 14:34:21
  */
 package controllers
 
@@ -31,7 +31,7 @@ var recodeText = map[int]string{
 	PARAM_ERROR:      "param error",
 	RECODE_UNKNOWERR: "unknow error",
 	RECODE_DATAERR:   "db data error",
-	AUTH_LOGIN:       "auth err",
+	AUTH_LOGIN:       "auth error",
 	FILE_ERROR:       "get file error",
 	FORMAT_ERROR:     "file format error",
 }

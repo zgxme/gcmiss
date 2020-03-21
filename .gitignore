@@ -1,2 +1,7 @@
-/gcmiss_logs/
+gcmiss_logs
 *.log
+*.memprof
+*.exe
+*.tmp
+.idea
+*.pprof

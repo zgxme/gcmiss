@@ -3,8 +3,8 @@
  * @version:
  * @Author: Zheng Gaoxiong
  * @Date: 2019-12-13 23:29:09
- * @LastEditors  : Zheng Gaoxiong
- * @LastEditTime : 2020-02-09 16:40:32
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-03-16 09:09:05
  */
 package main
 
@@ -39,5 +39,9 @@ func main() {
 	beego.SetStaticPath("js", "static/js")
 	beego.SetStaticPath("fonts", "static/fonts")
 	beego.SetStaticPath("img", "static/img")
+	if beego.BConfig.RunMode == "dev" {
+		beego.BConfig.WebConfig.DirectoryIndex = true
+		beego.BConfig.WebConfig.StaticDir["/swagger"] = "swagger"
+	}
 	beego.Run()
 }
