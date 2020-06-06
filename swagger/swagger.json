@@ -1,0 +1,1097 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "gcmiss API",
+        "description": "The API of gcmiss",
+        "version": "1.0.0",
+        "contact": {
+            "email": "purifiedzheng@gmail.com"
+        }
+    },
+    "basePath": "/api/v1",
+    "paths": {
+        "/artical/add": {
+            "post": {
+                "tags": [
+                    "artical"
+                ],
+                "description": "user add artical",
+                "operationId": "ArticalController.articalAdd",
+                "parameters": [
+                    {
+                        "in": "formData",
+                        "name": "name",
+                        "description": "The real name of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "title",
+                        "description": "The\ttitle of post",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "content",
+                        "description": "The content of post",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "images",
+                        "description": "the images of post",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4002": {
+                        "description": "db data error"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    },
+                    "4012": {
+                        "description": "get file error"
+                    },
+                    "4013": {
+                        "description": "file format error"
+                    }
+                }
+            }
+        },
+        "/artical/delete": {
+            "post": {
+                "tags": [
+                    "artical"
+                ],
+                "description": "user delete\tartical",
+                "operationId": "ArticalController.articalDelete",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "artical_id",
+                        "description": "The id of artical",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/artical/get": {
+            "get": {
+                "tags": [
+                    "artical"
+                ],
+                "description": "user get artical",
+                "operationId": "ArticalController.articalGet",
+                "parameters": [
+                    {
+                        "in": "int",
+                        "name": "cursor",
+                        "description": "The cursor of artical list",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "limit",
+                        "description": "The limit of artical list",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "desc",
+                        "description": "artical list order by desc",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/artical/update": {
+            "post": {
+                "tags": [
+                    "artical"
+                ],
+                "description": "user update artical info",
+                "operationId": "ArticalController.articalUpdate",
+                "parameters": [
+                    {
+                        "in": "formData",
+                        "name": "artical_id",
+                        "description": "The id of artical",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "artical_name",
+                        "description": "The\ttitle of artical",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "artical_desc",
+                        "description": "The content of artical",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "artical_price",
+                        "description": "The content of artical",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4002": {
+                        "description": "db data error"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    },
+                    "4012": {
+                        "description": "get file error"
+                    },
+                    "4013": {
+                        "description": "file format error"
+                    }
+                }
+            }
+        },
+        "/manager/delete": {
+            "post": {
+                "tags": [
+                    "manager"
+                ],
+                "description": "manager delete user",
+                "operationId": "ManagerController.ManagerDeleteUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "nickname",
+                        "description": "The nickname of user name",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4003": {
+                        "description": "db exist"
+                    },
+                    "4004": {
+                        "description": "db not exist"
+                    },
+                    "4006": {
+                        "description": "cannot delete self"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/manager/deleteManager": {
+            "post": {
+                "tags": [
+                    "manager"
+                ],
+                "description": "manager delete manager",
+                "operationId": "ManagerController.ManagerDeleteManager",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "nickname",
+                        "description": "The nickname of manager name",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4003": {
+                        "description": "db exist"
+                    },
+                    "4004": {
+                        "description": "db not exist"
+                    },
+                    "4006": {
+                        "description": "cannot delete self"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/manager/register": {
+            "post": {
+                "tags": [
+                    "manager"
+                ],
+                "description": "user regiseter by nickname and password",
+                "operationId": "ManagerController.userRegisterManager",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "nickname",
+                        "description": "The nickname of user register manager",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4003": {
+                        "description": "db exist"
+                    },
+                    "4004": {
+                        "description": "db not exist"
+                    },
+                    "4005": {
+                        "description": "cannot add self"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/post/add": {
+            "post": {
+                "tags": [
+                    "post"
+                ],
+                "description": "user add post",
+                "operationId": "PostController.postAdd",
+                "parameters": [
+                    {
+                        "in": "formData",
+                        "name": "name",
+                        "description": "The real name of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "title",
+                        "description": "The\ttitle of post",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "content",
+                        "description": "The content of post",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "fromData",
+                        "name": "tag",
+                        "description": "The tag of post",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "images",
+                        "description": "the images of post",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4002": {
+                        "description": "db data error"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    },
+                    "4012": {
+                        "description": "get file error"
+                    },
+                    "4013": {
+                        "description": "file format error"
+                    }
+                }
+            }
+        },
+        "/post/delete": {
+            "post": {
+                "tags": [
+                    "post"
+                ],
+                "description": "user delete post",
+                "operationId": "PostController.postDelete",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "post_id",
+                        "description": "The id of post",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/post/get": {
+            "get": {
+                "tags": [
+                    "post"
+                ],
+                "description": "user get post",
+                "operationId": "PostController.postGet",
+                "parameters": [
+                    {
+                        "in": "int",
+                        "name": "cursor",
+                        "description": "The cursor of post list",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "limit",
+                        "description": "The limit of post list",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "desc",
+                        "description": "post list order by desc",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/post/item/get": {
+            "get": {
+                "tags": [
+                    "post"
+                ],
+                "description": "user get post",
+                "operationId": "PostController.postGet",
+                "parameters": [
+                    {
+                        "in": "int",
+                        "name": "post_id",
+                        "description": "The id of post",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "artical_id",
+                        "description": "The id of artical",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "cursor",
+                        "description": "The cursor of post list",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "limit",
+                        "description": "The limit of post list",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    },
+                    {
+                        "in": "int",
+                        "name": "desc",
+                        "description": "post list order by desc",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/post/update": {
+            "post": {
+                "tags": [
+                    "post"
+                ],
+                "description": "user update post info",
+                "operationId": "PostController.postUpdate",
+                "parameters": [
+                    {
+                        "in": "formData",
+                        "name": "post_id",
+                        "description": "The id of post",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "title",
+                        "description": "The\ttitle of post",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "content",
+                        "description": "The content of post",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4002": {
+                        "description": "db data error"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    },
+                    "4012": {
+                        "description": "get file error"
+                    },
+                    "4013": {
+                        "description": "file format error"
+                    }
+                }
+            }
+        },
+        "/session/get": {
+            "get": {
+                "tags": [
+                    "session"
+                ],
+                "description": "user get session",
+                "operationId": "SessionController.getSession",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "5004": {
+                        "description": "auth error"
+                    }
+                }
+            }
+        },
+        "/session/login": {
+            "post": {
+                "tags": [
+                    "session"
+                ],
+                "description": "user login by nickname and passWord",
+                "operationId": "SessionController.userLogin",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "nickname",
+                        "description": "The nickname of user register",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "passWord",
+                        "description": "The passWord of user register",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4002": {
+                        "description": "db data error"
+                    }
+                }
+            }
+        },
+        "/session/logout": {
+            "post": {
+                "tags": [
+                    "session"
+                ],
+                "description": "user logout",
+                "operationId": "SessionController.userLogout",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/active": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "active user info",
+                "operationId": "UserController.userActive",
+                "parameters": [
+                    {
+                        "in": "string",
+                        "name": "auth",
+                        "description": "The auth of user",
+                        "schema": {
+                            "$ref": "#/definitions/true"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/user/get": {
+            "get": {
+                "tags": [
+                    "session"
+                ],
+                "description": "user get session",
+                "operationId": "SessionController.getSession",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "5004": {
+                        "description": "auth error"
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "tags": [
+                    "session"
+                ],
+                "description": "user login by nickname and passWord",
+                "operationId": "SessionController.userLogin",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "nickname",
+                        "description": "The nickname of user register",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "passWord",
+                        "description": "The passWord of user register",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4002": {
+                        "description": "db data error"
+                    }
+                }
+            }
+        },
+        "/user/logout": {
+            "post": {
+                "tags": [
+                    "session"
+                ],
+                "description": "user logout",
+                "operationId": "SessionController.userLogout",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/profile/get": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "get user info",
+                "operationId": "UserController.profileGet",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/user/register": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "user regiseter by nickname and password",
+                "operationId": "UserController.userRegister",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "nickname",
+                        "description": "The nickname of user register",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "The password of user register",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "email",
+                        "description": "email of user register",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4003": {
+                        "description": "db exist"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        },
+        "/user/update": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "user update real info",
+                "operationId": "UserController.userRealInfoUpdate",
+                "parameters": [
+                    {
+                        "in": "formData",
+                        "name": "name",
+                        "description": "The real name of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "stu_id",
+                        "description": "The stu_id of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "school",
+                        "description": "The school of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "profession",
+                        "description": "The profession of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "grade",
+                        "description": "The grade of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "sex",
+                        "description": "The sex of user",
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "qq_number",
+                        "description": "The qq_number of user",
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "email",
+                        "description": "The email of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "telnumber",
+                        "description": "The telnumber of user",
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "avatar",
+                        "description": "The avatar\tof user",
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4002": {
+                        "description": "db data error"
+                    },
+                    "4009": {
+                        "description": "db error"
+                    },
+                    "4012": {
+                        "description": "get file error"
+                    },
+                    "4013": {
+                        "description": "file format error"
+                    }
+                }
+            }
+        },
+        "comment/add": {
+            "post": {
+                "tags": [
+                    "comment"
+                ],
+                "description": "user add comment",
+                "operationId": "CommentController.commentAdd",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "user_to",
+                        "description": "user_id of comment to",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "comment",
+                        "description": "the content of comment",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "post_id",
+                        "description": "post_id of comment",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "artical_id",
+                        "description": "artical_id of comment",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "2": {
+                        "description": "param error"
+                    },
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ZDTCustomer.Customer"
+                        }
+                    },
+                    "4009": {
+                        "description": "db error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "false": {
+            "title": "false",
+            "type": "object"
+        },
+        "models.ZDTCustomer.Customer": {
+            "title": "Customer",
+            "type": "object"
+        },
+        "true": {
+            "title": "true",
+            "type": "object"
+        }
+    },
+    "tags": [
+        {
+            "name": "user",
+            "description": "session api\n"
+        },
+        {
+            "name": "manager",
+            "description": "manager api\n"
+        },
+        {
+            "name": "post",
+            "description": "post api\n"
+        },
+        {
+            "name": "session",
+            "description": "session api\n"
+        },
+        {
+            "name": "artical",
+            "description": "artical api\n"
+        },
+        {
+            "name": "comment",
+            "description": "comment api\n"
+        }
+    ]
+}
