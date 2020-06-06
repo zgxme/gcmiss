@@ -44,7 +44,9 @@ password、username为开通smtp服务的邮箱的授权码和邮箱账号
 前端项目 gcmiss-fe  
 编译产出  
 npm run build  
-将产出移到views目录下  
+将产出移到views目录下
+
+后端项目  
 nohup go run main.go  >/dev/null 2>&1 &  
 
 #### Nginx配置  
