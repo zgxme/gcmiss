@@ -8,6 +8,7 @@
     + [线上部署](#----)
       - [编译运行](#----)
       - [Nginx配置](#nginx--)
+  * [The End](#the-end)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -55,6 +56,6 @@ https://blog.csdn.net/weixin_33946020/article/details/91834554?utm_medium=distri
 
 ## The End
 如果你对项目感兴趣的话，可以提patch，期待你的start
-Thanks all~
+Thanks all
 Email: purifiedzheng@gmail.com
 
