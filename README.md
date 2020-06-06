@@ -13,7 +13,7 @@
 
 # gcmiss(工程小秘书)  
 ## 项目介绍  
-校园生活服务网站，集校园交流、失物招领、寻物启事、求人办事、二手市场等功能  
+毕业设计校园生活服务网站，集校园交流、失物招领、寻物启事、求人办事、二手市场等功能  
 项目前后端分离  
 
 ### FE  
@@ -52,4 +52,9 @@ nohup go run main.go  >/dev/null 2>&1 &
 #### Nginx配置  
 恶意请求ip封禁，可参考    
 https://blog.csdn.net/weixin_33946020/article/details/91834554?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+## The End
+如果你对项目感兴趣的话，可以提patch，期待你的start
+Thanks all~
+Email: purifiedzheng@gmail.com
 
