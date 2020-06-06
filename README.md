@@ -1,21 +1,29 @@
-- [gcmiss(工程小秘书)](#gcmiss-------)
-  * [项目介绍](#----)
-    + [FE](#fe)
-    + [BACKEND](#backend)
-  * [部署](#--)
-    + [环境依赖](#----)
-    + [配置修改](#----)
-    + [线上部署](#----)
-      - [编译运行](#----)
-      - [Nginx配置](#nginx--)
-  * [The End](#the-end)
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Zheng Gaoxiong
+ * @Date: 2020-06-06 20:32:27
+ * @LastEditors: Zheng Gaoxiong
+ * @LastEditTime: 2020-06-06 20:34:21
+--> 
+- [gcmiss(工程小秘书)](#gcmiss工程小秘书)
+  - [项目介绍](#项目介绍)
+    - [FE](#fe)
+    - [BACKEND](#backend)
+  - [部署](#部署)
+    - [环境依赖](#环境依赖)
+    - [配置修改](#配置修改)
+    - [线上部署](#线上部署)
+      - [编译运行](#编译运行)
+      - [Nginx配置](#nginx配置)
+  - [The End](#the-end)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # gcmiss(工程小秘书)  
 ## 项目介绍  
 毕业设计校园生活服务网站，集校园交流、失物招领、寻物启事、求人办事、二手市场等功能  
-项目前后端分离
+项目前后端分离  
 用户注册使用邮箱激活方式，项目图片存储使用阿里oss静态资源管理，同时支持ip封禁
 
 ### FE  
@@ -60,6 +68,7 @@ https://blog.csdn.net/weixin_33946020/article/details/91834554?utm_medium=distri
 res , err = cache:expire("bind_"..ngx.var.remote_addr,ip_bind_time)
 ```
 ## The End
+项目演示http://www.zhitiaosay.com/  
 如果你对项目感兴趣的话，可以提patch，期待你的star⭐  
 Thanks all  
 Email: purifiedzheng@gmail.com  
