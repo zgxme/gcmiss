@@ -63,4 +63,4 @@ res , err = cache:expire("bind_"..ngx.var.remote_addr,ip_bind_time)
 如果你对项目感兴趣的话，可以提patch，期待你的star⭐  
 Thanks all  
 Email: purifiedzheng@gmail.com  
-Blog：
+Blog：https://www.cnblogs.com/zhenggaoxiong
