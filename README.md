@@ -55,7 +55,6 @@ nohup go run main.go  >/dev/null 2>&1 &
 https://blog.csdn.net/weixin_33946020/article/details/91834554?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 
 ## The End
-如果你对项目感兴趣的话，可以提patch，期待你的start
-Thanks all
-Email: purifiedzheng@gmail.com
-
+如果你对项目感兴趣的话，可以提patch，期待你的star⭐  
+Thanks all  
+Email: purifiedzheng@gmail.com  
