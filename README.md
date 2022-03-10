@@ -68,9 +68,7 @@ https://blog.csdn.net/weixin_33946020/article/details/91834554?utm_medium=distri
 res , err = cache:expire("bind_"..ngx.var.remote_addr,ip_bind_time)
 ```
 ## The End
-项目演示http://www.zhitiaosay.com/  
-如果你对项目感兴趣的话，可以提patch，期待你的Star 
+如果你对项目感兴趣的话，可以提patch，期待你的Star  
 Thanks all  
 Email: purifiedzheng@gmail.com  
-Blog：https://www.cnblogs.com/zhenggaoxiong
-详细使用可以联系Q:511828228
+毕设指导、lunwen全套可以联系QQ:511828228（有偿）
